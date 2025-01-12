@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
-import { Container, Typography, TextField, Button, Paper } from '@material-ui/core';
+import {
+  Container,
+  Typography,
+  TextField,
+  Button,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+} from '@material-ui/core';
 
 const Simulacao = () => {
   const [cliente, setCliente] = useState('');
@@ -10,16 +19,17 @@ const Simulacao = () => {
   const [salarioDia, setSalarioDia] = useState('');
   const [diasTrabalhados, setDiasTrabalhados] = useState('');
   const [preview, setPreview] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Converte os valores para número antes de calcular
+    // Convert values to numbers and calculate total salary
     const salarioDiaNum = parseFloat(salarioDia);
     const diasTrabalhadosNum = parseInt(diasTrabalhados, 10);
     const salarioTotal = salarioDiaNum * diasTrabalhadosNum;
 
-    // Atualiza o preview com o salário total calculado
+    // Update preview with calculated total salary
     setPreview({
       cliente,
       morada,
@@ -30,6 +40,13 @@ const Simulacao = () => {
       diasTrabalhados: diasTrabalhadosNum,
       salarioTotal,
     });
+
+    // Open modal dialog
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -110,19 +127,26 @@ const Simulacao = () => {
       </form>
 
       {preview && (
-        <Paper style={{ padding: 20, marginTop: 20 }}>
-          <Typography variant="h6">Pré-visualização da Fatura</Typography>
-          <Typography>Nome Cliente: {preview.cliente}</Typography>
-          <Typography>Morada: {preview.morada}</Typography>
-          <Typography>Código Postal: {preview.codigoPostal}</Typography>
-          <Typography>Numero Colaborador: {preview.numeroColaborador}</Typography>
-          <Typography>NIF: {preview.nif}</Typography>
-          <Typography>Salário por dia: € {preview.salarioDia}</Typography>
-          <Typography>Dias Trabalhados: {preview.diasTrabalhados}</Typography>
-          <Typography>
-            Salário Bruto: € {preview.salarioTotal.toFixed(2)}
-          </Typography>
-        </Paper>
+        <Dialog open={isModalOpen} onClose={handleCloseModal}>
+          <DialogTitle>Pré-visualização da Fatura</DialogTitle>
+          <DialogContent>
+            <Typography>Nome Cliente: {preview.cliente}</Typography>
+            <Typography>Morada: {preview.morada}</Typography>
+            <Typography>Código Postal: {preview.codigoPostal}</Typography>
+            <Typography>Numero Colaborador: {preview.numeroColaborador}</Typography>
+            <Typography>NIF: {preview.nif}</Typography>
+            <Typography>Salário por dia: € {preview.salarioDia}</Typography>
+            <Typography>Dias Trabalhados: {preview.diasTrabalhados}</Typography>
+            <Typography>
+              Salário Bruto: € {preview.salarioTotal.toFixed(2)}
+            </Typography>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleCloseModal} color="primary">
+              Fechar
+            </Button>
+          </DialogActions>
+        </Dialog>
       )}
     </Container>
   );
