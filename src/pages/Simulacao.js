@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../styles/Simulacao.css";
 import {
   Container,
   Typography,
@@ -137,6 +138,7 @@ const Simulacao = () => {
             <Typography>NIF: {preview.nif}</Typography>
             <Typography>Salário por dia: € {preview.salarioDia}</Typography>
             <Typography>Dias Trabalhados: {preview.diasTrabalhados}</Typography>
+            <Typography>Salário Brut Total: € {preview.salarioTotal}</Typography>
             <Typography>
             </Typography>
           </DialogContent>
