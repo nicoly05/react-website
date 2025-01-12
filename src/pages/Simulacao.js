@@ -119,7 +119,7 @@ const Simulacao = () => {
         <Button
           type="submit"
           variant="contained"
-          color="primary"
+          color="black"
           style={{ marginTop: 20 }}
         >
           Pré-visualização
@@ -138,7 +138,6 @@ const Simulacao = () => {
             <Typography>Salário por dia: € {preview.salarioDia}</Typography>
             <Typography>Dias Trabalhados: {preview.diasTrabalhados}</Typography>
             <Typography>
-              Salário Bruto: € {preview.salarioTotal.toFixed(2)}
             </Typography>
           </DialogContent>
           <DialogActions>

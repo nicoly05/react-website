@@ -1,0 +1,20 @@
+{
+    "monthlyRevenue": [
+      { "month": "Jan", "revenue": 12000 },
+      { "month": "Feb", "revenue": 15000 },
+      { "month": "Mar", "revenue": 17000 },
+      { "month": "Apr", "revenue": 14000 },
+      { "month": "May", "revenue": 18000 },
+      { "month": "Jun", "revenue": 22000 }
+    ],
+    "annualRevenue": [
+      { "year": 2018, "revenue": 150000 },
+      { "year": 2019, "revenue": 165000 },
+      { "year": 2020, "revenue": 178000 },
+      { "year": 2021, "revenue": 190000 },
+      { "year": 2022, "revenue": 210000 }
+    ],
+    "faturasEmitidas": 350,
+    "clientesAtivos": 55
+  }
+  
