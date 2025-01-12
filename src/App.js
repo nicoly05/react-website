@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import Navbar from "./components/Navbar";
-import Faturacao from "./pages/Faturacao";
+import Home from "./pages/Home.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Faturacao />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </Router>
     </div>
