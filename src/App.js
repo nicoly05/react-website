@@ -1,10 +1,18 @@
-import React from 'react';
+import React from "react";
 import './App.css';
+import Navbar from "./components/Navbar";
+import Faturacao from "./pages/Faturacao";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-     <h1>Teste</h1>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Faturacao />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
