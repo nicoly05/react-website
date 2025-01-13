@@ -10,6 +10,7 @@ import {
   DialogContent,
   DialogActions,
 } from '@material-ui/core';
+import { jsPDF } from 'jspdf';
 
 const Simulacao = () => {
   const [cliente, setCliente] = useState('');
@@ -25,12 +26,10 @@ const Simulacao = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-   
     const salarioDiaNum = parseFloat(salarioDia);
     const diasTrabalhadosNum = parseInt(diasTrabalhados, 10);
     const salarioTotal = salarioDiaNum * diasTrabalhadosNum;
 
-    
     setPreview({
       cliente,
       morada,
@@ -42,12 +41,62 @@ const Simulacao = () => {
       salarioTotal,
     });
 
-   
     setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+
+  const handleExportPDF = () => {
+    const doc = new jsPDF();
+
+    // Cabeçalho da fatura
+    doc.setFont('Helvetica', 'bold');
+    doc.setFontSize(16);
+    doc.text('Fatura Empresa', 105, 20, null, null, 'center');
+    
+    doc.setFont('Helvetica', 'normal');
+    doc.setFontSize(12);
+    doc.text('Data: ' + new Date().toLocaleDateString(), 160, 30);
+
+    doc.text(`Cliente: ${preview.cliente}`, 20, 40);
+    doc.text(`Morada: ${preview.morada}`, 20, 50);
+    doc.text(`Código Postal: ${preview.codigoPostal}`, 20, 60);
+    doc.text(`Número Colaborador: ${preview.numeroColaborador}`, 20, 70);
+    doc.text(`NIF: ${preview.nif}`, 20, 80);
+
+    // Adicionando uma linha horizontal para separar seções
+    doc.setLineWidth(0.5);
+    doc.line(20, 90, 190, 90);
+
+    // Tabela para detalhamento do salário
+    doc.text('Descrição', 20, 100);
+    doc.text('Valor', 150, 100);
+
+    doc.setFont('Helvetica', 'normal');
+    doc.text(`Salário por dia:`, 20, 110);
+    doc.text(`€ ${preview.salarioDia.toFixed(2)}`, 150, 110);
+
+    doc.text(`Dias Trabalhados:`, 20, 120);
+    doc.text(`${preview.diasTrabalhados}`, 150, 120);
+
+    doc.text(`Salário Bruto Total:`, 20, 130);
+    doc.text(`€ ${preview.salarioTotal.toFixed(2)}`, 150, 130);
+
+    // Linha final para rodapé
+    doc.setLineWidth(0.5);
+    doc.line(20, 140, 190, 140);
+
+    // Rodapé
+    doc.setFont('Helvetica', 'italic');
+    doc.text('Obrigado por escolher nossos serviços!', 20, 150);
+
+    doc.setFont('Helvetica', 'bold');
+    doc.text(`Total a Pagar: € ${preview.salarioTotal.toFixed(2)}`, 150, 160);
+
+    // Gerar o PDF
+    doc.save('fatura.pdf');
   };
 
   return (
@@ -154,6 +203,9 @@ const Simulacao = () => {
           <DialogActions>
             <Button onClick={handleCloseModal} color="primary">
               Fechar
+            </Button>
+            <Button onClick={handleExportPDF} color="primary">
+              Exportar PDF
             </Button>
           </DialogActions>
         </Dialog>
