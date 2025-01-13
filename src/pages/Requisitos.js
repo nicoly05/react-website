@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Requisitos.css'; // Importe o CSS
-
+import '../styles/Requisitos.css'; 
 const Requisitos = () => {
   const [itens, setItens] = useState([
     { id: 1, name: 'Nome da Empresa', checked: false },

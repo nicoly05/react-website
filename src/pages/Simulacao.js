@@ -25,12 +25,12 @@ const Simulacao = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Convert values to numbers and calculate total salary
+   
     const salarioDiaNum = parseFloat(salarioDia);
     const diasTrabalhadosNum = parseInt(diasTrabalhados, 10);
     const salarioTotal = salarioDiaNum * diasTrabalhadosNum;
 
-    // Update preview with calculated total salary
+    
     setPreview({
       cliente,
       morada,
@@ -42,7 +42,7 @@ const Simulacao = () => {
       salarioTotal,
     });
 
-    // Open modal dialog
+   
     setIsModalOpen(true);
   };
 

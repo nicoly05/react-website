@@ -1,35 +1,38 @@
 .home {
     width: 100%;
-    height: 90vh;
+    height: auto; 
+    min-height: 90vh; 
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;    /* Centraliza verticalmente */
-    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    padding: 20px;
 }
 
 .headerContainer {
-    width: auto;
-    padding: 20px; /* Adiciona espaçamento interno */
-    display: flex; /* Ativa flexbox */
-    flex-direction: column; /* Alinha os itens verticalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
-    align-items: center;     /* Centraliza os itens horizontalmente */
-    gap: 20px; /* Espaçamento uniforme entre os elementos */
-    background: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 90%;
+    max-width: 800px; 
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
+    gap: 20px; 
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .headerContainer h1 {
-    font-size: 60px; /* Reduz o tamanho do título */
-    font-weight: 600; /* Negrito */
+    font-size: 3rem; 
+    font-weight: 600; 
     color: #121619;
-    text-align: center; /* Centraliza o texto */
-    margin: 0; /* Remove margens extras */
+    text-align: center; 
+    margin: 0; 
 }
 
 .headerContainer button {
@@ -39,48 +42,53 @@
     cursor: pointer;
     background-color: #121619;
     height: 50px;
-    width: 200px; /* Tamanho maior para os botões */
+    width: 100%; 
+    max-width: 300px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem; 
     transition: background-color 0.3s ease;
 }
 
 .headerContainer button:hover {
-    background-color: #07090a; /* Cor mais escura ao passar o mouse */
+    background-color: #07090a;
 }
 
 .headerContainer a {
-    text-decoration: none; /* Remove sublinhado dos links */
+    text-decoration: none; 
 }
 
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 768px) {
+    .headerContainer {
+        padding: 15px; 
+    }
+
+    .headerContainer h1 {
+        font-size: 2.5rem;
+    }
+
+    .headerContainer button {
+        font-size: 0.9rem; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
     .home {
-        justify-content: center;
-        align-items: center;
+        padding: 10px; 
     }
 
     .headerContainer {
-        margin-left: 0px;
-        border-radius: 10px;
-        padding: 10px;
-        width: 90%;
-        background-color: #121619;
+        padding: 10px; 
+        background-color: rgba(18, 22, 25, 0.9); 
         color: white;
     }
 
     .headerContainer h1 {
-        font-size: 40px;
-        color: white;
+        font-size: 2rem; 
     }
 
     .headerContainer button {
-        background-color: white;
-        color: #121619;
-        margin-bottom: 20px;
-    }
-
-    .headerContainer button:hover {
-        background-color: rgb(225, 225, 225);
-        color: #121619;
+        font-size: 0.8rem; 
+        height: 45px; 
     }
 }
