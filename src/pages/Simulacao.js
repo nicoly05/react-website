@@ -131,16 +131,25 @@ const Simulacao = () => {
         <Dialog open={isModalOpen} onClose={handleCloseModal}>
           <DialogTitle>Pré-visualização da Fatura</DialogTitle>
           <DialogContent>
-            <Typography>Nome Cliente: {preview.cliente}</Typography>
-            <Typography>Morada: {preview.morada}</Typography>
-            <Typography>Código Postal: {preview.codigoPostal}</Typography>
-            <Typography>Número Colaborador: {preview.numeroColaborador}</Typography>
-            <Typography>NIF: {preview.nif}</Typography>
-            <Typography>Salário por dia: € {preview.salarioDia}</Typography>
-            <Typography>Dias Trabalhados: {preview.diasTrabalhados}</Typography>
-            <Typography>Salário Bruto Total: € {preview.salarioTotal}</Typography>
-            <Typography>
-            </Typography>
+            <div className="faturaPreview">
+              <div className="header">
+                <h2>Fatura Empresa</h2>
+                <p>Cliente: {preview.cliente}</p>
+                <p>Morada: {preview.morada}</p>
+                <p>Código Postal: {preview.codigoPostal}</p>
+                <p>Número Colaborador: {preview.numeroColaborador}</p>
+                <p>NIF: {preview.nif}</p>
+              </div>
+              <div className="content">
+                <p><strong>Salário por dia:</strong> € {preview.salarioDia.toFixed(2)}</p>
+                <p><strong>Dias Trabalhados:</strong> {preview.diasTrabalhados}</p>
+                <p><strong>Salário Bruto Total:</strong> € {preview.salarioTotal.toFixed(2)}</p>
+              </div>
+              <div className="footer">
+                <p>Obrigado por escolher nossos serviços!</p>
+                <p className="total">Total a Pagar: € {preview.salarioTotal.toFixed(2)}</p>
+              </div>
+            </div>
           </DialogContent>
           <DialogActions>
             <Button onClick={handleCloseModal} color="primary">

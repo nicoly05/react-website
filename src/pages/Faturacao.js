@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Typography, Paper } from '@material-ui/core';
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, BarChart, Bar } from 'recharts';
 import mockData from '../data/mockData.json';
-import '../styles/Faturacao.css'; // Importe o arquivo CSS
+import '../styles/Faturacao.css'; 
 
 const Faturacao = () => {
   const [data, setData] = useState(null);
