@@ -134,11 +134,11 @@ const Simulacao = () => {
             <Typography>Nome Cliente: {preview.cliente}</Typography>
             <Typography>Morada: {preview.morada}</Typography>
             <Typography>Código Postal: {preview.codigoPostal}</Typography>
-            <Typography>Numero Colaborador: {preview.numeroColaborador}</Typography>
+            <Typography>Número Colaborador: {preview.numeroColaborador}</Typography>
             <Typography>NIF: {preview.nif}</Typography>
             <Typography>Salário por dia: € {preview.salarioDia}</Typography>
             <Typography>Dias Trabalhados: {preview.diasTrabalhados}</Typography>
-            <Typography>Salário Brut Total: € {preview.salarioTotal}</Typography>
+            <Typography>Salário Bruto Total: € {preview.salarioTotal}</Typography>
             <Typography>
             </Typography>
           </DialogContent>
