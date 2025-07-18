@@ -12,6 +12,7 @@ import Wrestling from '../assets/Wrestling.png';
 import Lust from '../assets/Lust.png';
 import TGB from '../assets/TGB.png';
 import WhatsApp from '../assets/WhatsApp.png';
+import { useSearchParams } from 'react-router-dom';
 
 
 const imagens = [
@@ -30,7 +31,12 @@ const imagens = [
 ];
 
 function Projetos() {
-  const [filtro, setFiltro] = useState('todos');
+  // const [filtro, setFiltro] = useState('todos');
+
+  const [searchParams] = useSearchParams();
+  const categoriaParam = searchParams.get('categoria');
+  const [filtro, setFiltro] = useState(categoriaParam ? Number(categoriaParam) : 'todos');
+
 
   const imagensFiltradas =
     filtro === 'todos' ? imagens : imagens.filter((img) => img.categoria === filtro);

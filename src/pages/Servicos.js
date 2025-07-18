@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 import '../styles/Servicos.css'; 
 import MetricasImg from '../assets/Metricas.png'; // ajusta o caminho conforme necessário
@@ -25,7 +27,9 @@ function Servicos(){
         <li>Arte para eventos (convites, painéis, brindes)</li>
         <li>Personalização com propósito</li>
       </ul>
+      <Link to="/Projetos?categoria=1">
       <button className='buttonBoxRosa'>Exemplos</button>
+      </Link>
     </div>
   </div>
 
@@ -39,7 +43,9 @@ function Servicos(){
         <li>Legendas que conectam</li>
         <li>Agendamento e organizações</li>
       </ul>
+      <Link to="/Projetos?categoria=2">
       <button className='buttonBoxPreto'>Exemplos</button>
+      </Link>
     </div>
     <div className="boxColuna boxImagem">
       <img src={MetricasImg} alt="Serviço 1" />
@@ -58,7 +64,9 @@ function Servicos(){
         <li>Vídeos institucionais e promocionais</li>
         <li>Ensaios em estúdio ou externos</li>
       </ul>
+      <Link to="/Projetos?categoria=3">
       <button className='buttonBoxRosa'>Exemplos</button>
+      </Link>
     </div>
   </div>
 
@@ -72,7 +80,9 @@ function Servicos(){
         <li>Edição de eventos</li>
         <li>Padrão visual da sua marca</li>
       </ul>
+      <Link to="/Projetos?categoria=4">
       <button className='buttonBoxPreto'>Exemplos</button>
+      </Link>
     </div>
     <div className="boxColuna boxImagem">
      <img src={MetricasImg} alt="Serviço 1" />
@@ -91,7 +101,9 @@ function Servicos(){
         <li>Segmentação do público Ideal</li>
         <li>Relatórios e otimizações</li>
       </ul>
+      <Link to="/Projetos?categoria=5">
       <button className='buttonBoxRosa'>Exemplos</button>
+      </Link>
     </div>
   </div>
 
@@ -104,7 +116,9 @@ function Servicos(){
        <li>Vídeo para publicidade em motion design</li>
        <li>Animação entre 30 a 60 segundos</li>
       </ul>
+      <Link to="/Projetos?categoria=6">
        <button className='buttonBoxPreto'>Exemplos</button>
+       </Link>
     </div>
     <div className="boxColuna boxImagem">
    <img src={MetricasImg} alt="Serviço 1" />
@@ -123,7 +137,9 @@ function Servicos(){
        <li>Reels e conteúdo dinâmico</li>
        <li>Posts atualizados no feed</li>
       </ul>
+      <Link to="/Projetos?categoria=7">
       <button className='buttonBoxRosa'>Exemplos</button>
+      </Link>
     </div>
   </div>
 
