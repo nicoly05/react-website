@@ -1,4 +1,4 @@
-.faturacao {
+/* .servicos {
     width: 100%;
     height: auto; 
     min-height: 100vh; 
@@ -15,7 +15,7 @@
     box-sizing: border-box; 
 }
 
-.faturacao .headerContainer {
+.servicos .headerContainer {
     width: 90%; 
     max-width: 800px; 
     padding: 20px; 
@@ -30,14 +30,14 @@
     text-align: center; 
 }
 
-.faturacao .headerContainer h1 {
+.servicos .headerContainer h1 {
     font-size: 3rem; 
     font-weight: 600; 
     color: #121619;
     margin: 0; 
 }
 
-.faturacao .headerContainer button {
+.servicos .headerContainer button {
     color: white;
     border: none;
     border-radius: 5px;
@@ -51,15 +51,15 @@
     transition: background-color 0.3s ease;
 }
 
-.faturacao .headerContainer button:hover {
+.servicos .headerContainer button:hover {
     background-color: #07090a;
 }
 
-.faturacao .headerContainer a {
+.servicos .headerContainer a {
     text-decoration: none; 
 }
 
-.faturacao .paper {
+.servicos .paper {
     padding: 20px;
     margin-top: 20px;
     width: 90%; 
@@ -70,49 +70,160 @@
     text-align: center; 
 }
 
-.faturacao .paper h6 {
+.servicos .paper h6 {
     font-weight: bold;
 }
 
 
 @media only screen and (max-width: 768px) {
-    .faturacao .headerContainer h1 {
+    .servicos .headerContainer h1 {
         font-size: 2.5rem; 
     }
 
-    .faturacao .headerContainer button {
+    .servicos .headerContainer button {
         font-size: 0.9rem; 
         height: 45px; 
     }
 
-    .faturacao .paper {
+    .servicos .paper {
         padding: 15px; 
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .faturacao {
+    .servicos {
         padding: 10px; 
     }
 
-    .faturacao .headerContainer {
+    .servicos .headerContainer {
         padding: 15px; 
         background-color: rgba(18, 22, 25, 0.9); 
         color: white; 
     }
 
-    .faturacao .headerContainer h1 {
+    .servicos .headerContainer h1 {
         font-size: 2rem; 
     }
 
-    .faturacao .headerContainer button {
+    .servicos .headerContainer button {
         font-size: 0.8rem;
         height: 40px; 
     }
 
-    .faturacao .paper {
+    .servicos .paper {
         width: 100%; 
         padding: 10px; 
     }
 }
+ */
+/* Box 1: Título */
+.boxTitulo {
+    width: 100%;
+    background-color: #000;
+    padding: 60px 40px;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    /* ou outra fonte */
+    font-size: 2rem;
+    /* font-weight: bold; */
+    color: white;
+}
 
+.boxTitulo h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.boxTitulo span {
+    color: #ff1492;
+    /* rosa */
+}
+
+/* Box 2: Rosa com imagem à esquerda */
+.boxRosa {
+    display: flex;
+    flex-direction: row;
+    background-color: #ff1492;
+    color: white;
+    padding: 40px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-family: 'Georgia', serif;
+    /* ou outra fonte */
+    font-size: 2rem;
+  
+    color: white;
+}
+
+.boxRosa .boxImagem img {
+    width: 400px;
+    /* ou qualquer tamanho que prefiras */
+    height: 500px;
+    border-radius: 20px;
+    /* Borda arredondada */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* opcional: sombra leve */
+}
+
+/* Box 3: Preto com imagem à direita */
+.boxPreto {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-family: 'Georgia', serif;
+    /* ou outra fonte */
+    font-size: 2rem;
+    color: white;
+}
+
+.boxPreto .boxImagem img {
+    width: 200px;
+    /* ou qualquer tamanho que prefiras */
+    height: 200px;
+    border-radius: 20px;
+    /* Borda arredondada */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* opcional: sombra leve */
+}
+
+.boxColuna {
+    flex: 1;
+    min-width: 250px;
+}
+
+.boxTexto h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.boxTexto ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .boxRosa,
+    .boxPreto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .boxTexto ul {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+}

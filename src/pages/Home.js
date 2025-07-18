@@ -9,7 +9,7 @@ function Home() {
   <div className="home">
   <div className="backgroundOverlay"></div> {/* <== Overlay com blur */}
   <div className="headerContainer">
-    <h1>Serviços</h1>
+    <h1>+ 55 lab</h1>
     <div className="headerContainerButton">
       <Link to="/Servicos"><button>Serviços</button></Link>
       <Link to="/Projetos"><button>Projetos</button></Link>
