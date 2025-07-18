@@ -155,7 +155,6 @@
     font-family: 'Georgia', serif;
     /* ou outra fonte */
     font-size: 2rem;
-  
     color: white;
 }
 
@@ -189,9 +188,9 @@
 }
 
 .boxPreto .boxImagem img {
-    width: 200px;
+    width: 400px;
     /* ou qualquer tamanho que prefiras */
-    height: 200px;
+    height: 500px;
     border-radius: 20px;
     /* Borda arredondada */
     object-fit: cover;

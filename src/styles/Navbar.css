@@ -14,7 +14,7 @@ body, html {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 0 20px; /* padding horizontal responsivo */
+  padding: 0 40px; /* padding horizontal responsivo */
   box-sizing: border-box; /* inclui o padding no width */
   z-index: 1000;
 }

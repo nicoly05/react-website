@@ -22,16 +22,19 @@ const Servicos = () => {
   </div>
 
   {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa">
+ <div className="boxRosa">
     <div className="boxColuna boxImagem">
-      <img src="https://via.placeholder.com/150" alt="Serviço 1" />
+      <img src={MetricasImg} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
-      <h2>Título do Serviço</h2>
+      <h2>01. Identidade Visual</h2>
       <ul>
-        <li>Legenda 1</li>
-        <li>Legenda 2</li>
-        <li>Legenda 3</li>
+        <li>Logotipo</li>
+        <li>Paleta de Cores e Tipografia</li>
+        <li>Manual da marca</li>
+        <li>Arte para eventos (convites, painéis, brindes)</li>
+        <li>Personalização com propósito</li>
+      
       </ul>
     </div>
   </div>
@@ -47,7 +50,7 @@ const Servicos = () => {
       </ul>
     </div>
     <div className="boxColuna boxImagem">
-      <img alt="Serviço 2" />
+      <img src={MetricasImg} alt="Serviço 1" />
     </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
@@ -56,11 +59,14 @@ const Servicos = () => {
       <img src={MetricasImg} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
-      <h2>Título do Serviço</h2>
+      <h2>01. Identidade Visual</h2>
       <ul>
-        <li>Legenda 1</li>
-        <li>Legenda 2</li>
-        <li>Legenda 3</li>
+        <li>Logotipo</li>
+        <li>Paleta de Cores e Tipografia</li>
+        <li>Manual da marca</li>
+        <li>Arte para eventos (convites, painéis, brindes)</li>
+        <li>Personalização com propósito</li>
+      
       </ul>
     </div>
   </div>
@@ -76,13 +82,13 @@ const Servicos = () => {
       </ul>
     </div>
     <div className="boxColuna boxImagem">
-      <img src="https://via.placeholder.com/150" alt="Serviço 2" />
+     <img src={MetricasImg} alt="Serviço 1" />
     </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
   <div className="boxRosa">
     <div className="boxColuna boxImagem">
-      <img src="https://via.placeholder.com/150" alt="Serviço 1" />
+   <img src={MetricasImg} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
       <h2>Título do Serviço</h2>
@@ -105,7 +111,7 @@ const Servicos = () => {
       </ul>
     </div>
     <div className="boxColuna boxImagem">
-      <img src="https://via.placeholder.com/150" alt="Serviço 2" />
+   <img src={MetricasImg} alt="Serviço 1" />
     </div>
   </div>
 </div>
