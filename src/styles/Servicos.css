@@ -157,6 +157,20 @@
     font-size: 2rem;
     color: white;
 }
+.buttonBoxRosa {
+       color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #121619;
+    height: 50px;
+    width: 100px; 
+    max-width: 300px;
+    text-decoration: none;
+    text-align: center; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease;
+}
 
 .boxRosa .boxImagem img {
     width: 400px;
@@ -185,6 +199,20 @@
     /* ou outra fonte */
     font-size: 2rem;
     color: white;
+}
+.buttonBoxPreto {
+       color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff1492;
+    height: 50px;
+    width: 100px; 
+    max-width: 300px;
+    text-decoration: none;
+    text-align: center; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease;
 }
 
 .boxPreto .boxImagem img {
