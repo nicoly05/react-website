@@ -1,102 +1,105 @@
+/* Garante que a página nunca transborde horizontalmente */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
 .navbar {
-    width: 100%;
-    height: 100px;
-    background-color: #121619;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 20px; /* padding horizontal responsivo */
+  box-sizing: border-box; /* inclui o padding no width */
+  z-index: 1000;
+}
+
+/* Lado esquerdo com logo */
+.navbar .leftSide {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .leftSide img {
+  width: 70px;
+  height: auto;
+}
+
+/* Lado direito com links e botão */
+.navbar .rightSide {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Botão hamburguer */
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  display: none; /* só aparece no mobile */
+}
+
+/* Ícone hamburguer */
+.navbar .rightSide svg {
+  font-size: 40px;
+}
+
+/* Menu escondido no mobile */
+.hiddenLinks {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: #ff5fbb;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 999;
+}
+
+.hiddenLinks a {
+  padding: 10px 0;
+}
+
+/* Quando aberto */
+#open .hiddenLinks {
+  display: flex;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  .navbar .rightSide a {
+    display: none;
   }
-  
-  .navbar .leftSide {
-    flex: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 150px;
-  }
-  
-  .navbar .leftSide img {
-    width: 70px;
-  }
-  
-  .navbar .rightSide {
-    flex: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-  }
-  
+
   .navbar .rightSide button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
+    display: block;
   }
-  
-  .navbar .rightSide svg {
-    font-size: 40px;
+}
+
+@media only screen and (min-width: 769px) {
+  .hiddenLinks {
+    display: none !important;
   }
-  
-  .navbar #open {
-    padding-left: 0px;
-  }
-  .navbar #open img {
+
+  .navbar .rightSide button {
     display: none;
   }
-  
-  .navbar #close img {
-    display: inherit;
-  }
-  
-  .navbar #open .hiddenLinks {
-    display: inherit;
-    margin-left: 30px;
-  }
-  
-  .navbar #close .hiddenLinks {
-    display: none;
-  }
-  
-  .navbar #open a {
-    width: 70px;
-    margin: 5px;
-  }
-  @media only screen and (max-width: 900px) {
-    .navbar .rightSide a {
-      width: 70px;
-    }
-    .navbar .leftSide {
-      padding-left: 50px;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .navbar .rightSide a {
-      display: none;
-    }
-  
-    .navbar .rightSide {
-      justify-content: flex-end;
-      padding-right: 50px;
-    }
-  
-    .navbar .rightSide button {
-      display: inherit;
-    }
-  }
-  
-  @media only screen and (min-width: 600px) {
-    .navbar .rightSide button {
-      display: none;
-    }
-  
-    .hiddenLinks {
-      display: none;
-    }
-  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/Simulacao.css";
+import "../styles/SobreNos.css";
 import {
   Container,
   Typography,
@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core';
 import { jsPDF } from 'jspdf';
 
-const Simulacao = () => {
+const SobreNos = () => {
   const [cliente, setCliente] = useState('');
   const [morada, setMorada] = useState('');
   const [codigoPostal, setCodigoPostal] = useState('');
@@ -214,4 +214,4 @@ const Simulacao = () => {
   );
 };
 
-export default Simulacao;
+export default SobreNos;

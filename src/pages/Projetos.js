@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/Requisitos.css'; 
-const Requisitos = () => {
+import '../styles/Projetos.css'; 
+const Projetos = () => {
   const [itens, setItens] = useState([
     { id: 1, name: 'Nome da Empresa', checked: false },
     { id: 2, name: 'Número de Identificação Fiscal -> NIF', checked: false },
@@ -44,4 +44,4 @@ const Requisitos = () => {
   );
 };
 
-export default Requisitos;
+export default Projetos;

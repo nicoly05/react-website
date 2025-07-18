@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Container, Typography, Paper } from '@material-ui/core';
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, BarChart, Bar } from 'recharts';
 import mockData from '../data/mockData.json';
-import '../styles/Faturacao.css'; 
+import '../styles/Servicos.css'; 
 
-const Faturacao = () => {
+const Servicos = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -49,5 +49,5 @@ const Faturacao = () => {
   );
 };
 
-export default Faturacao;
+export default Servicos;
 
