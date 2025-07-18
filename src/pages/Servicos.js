@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import mockData from '../data/mockData.json';
+import React from 'react';
+
 import '../styles/Servicos.css'; 
 import MetricasImg from '../assets/Metricas.png'; // ajusta o caminho conforme necessário
 
-
-
-const Servicos = () => {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    setData(mockData);
-  }, []);
-
-  if (!data) return <div>Carregando...</div>;
-
+function Servicos(){
   return (
     <div className="servicos">
   {/* Box 1 - Título com destaque */}

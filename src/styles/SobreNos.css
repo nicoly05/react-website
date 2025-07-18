@@ -1,119 +1,142 @@
-.simulacao {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #f4f4f9;
-}
-
-.headerContainer {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.formContainer {
+.boxTitulo {
     width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.formContainer .MuiTextField-root {
-    margin-bottom: 15px;
-}
-
-.buttonContainer {
-    margin-top: 20px;
-}
-
-.buttonContainer button {
-    margin: 10px;
-    padding: 12px 24px;
-    background-color: #1976d2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.buttonContainer button:hover {
-    background-color: #1565c0;
-}
-
-.faturaPreview {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
-    font-family: "Arial", sans-serif;
-}
-
-.faturaPreview .header {
+    background-color: #000;
+    padding: 60px 40px;
     text-align: center;
-    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+    /* ou outra fonte */
+    font-size: 2rem;
+    /* font-weight: bold; */
+    color: white;
 }
 
-.faturaPreview .header h2 {
-    font-size: 1.5rem;
+.boxTitulo h1 {
+    color: white;
+    font-size: 2rem;
     margin: 0;
 }
-
-.faturaPreview .header p {
+.boxTitulo h2 {
+    color: white;
     font-size: 1rem;
-    margin: 5px 0;
-    color: #555;
+    margin: 2;
+}
+.box-imagens {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: black;
+  flex-wrap: wrap;
 }
 
-.faturaPreview .content {
-    margin-bottom: 30px;
-    font-size: 1rem;
+.imagem-item {
+  text-align: center;
+  max-width: 250px;
 }
 
-.faturaPreview .content p {
-    margin: 5px 0;
-    color: #333;
+.imagem-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.faturaPreview .footer {
-    text-align: center;
-    margin-top: 20px;
+.imagem-item h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font: bold;
+  color: white;
 }
 
-.faturaPreview .footer p {
-    font-size: 0.9rem;
-    color: #777;
+.imagem-item p {
+  font-size: 1rem;
+  color: white;
 }
 
-.faturaPreview .footer .total {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
+/* Box 2: Rosa com imagem à esquerda */
+.boxRosa {
+    display: flex;
+    flex-direction: row;
+    background-color: #ff1492;
+    color: white;
+    padding: 40px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-family: 'Georgia', serif;
+    /* ou outra fonte */
+    font-size: 2rem;
+    color: white;
 }
 
-@media only screen and (max-width: 768px) {
-    .faturaPreview {
-        padding: 15px;
+.boxRosa .boxImagem img {
+    width: 400px;
+    /* ou qualquer tamanho que prefiras */
+    height: 500px;
+    border-radius: 20px;
+    /* Borda arredondada */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* opcional: sombra leve */
+}
+
+/* Box 3: Preto com imagem à direita */
+.boxPreto {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-family: 'Georgia', serif;
+    /* ou outra fonte */
+    font-size: 2rem;
+    color: white;
+}
+
+.boxPreto .boxImagem img {
+    width: 400px;
+    /* ou qualquer tamanho que prefiras */
+    height: 500px;
+    border-radius: 20px;
+    /* Borda arredondada */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* opcional: sombra leve */
+}
+
+.boxColuna {
+    flex: 1;
+    min-width: 250px;
+}
+
+.boxTexto h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.boxTexto ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .boxRosa,
+    .boxPreto {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .faturaPreview .header h2 {
-        font-size: 1.3rem;
-    }
-
-    .faturaPreview .content p,
-    .faturaPreview .footer p {
-        font-size: 0.9rem;
-    }
-
-    .faturaPreview .footer .total {
-        font-size: 1rem;
+    .boxTexto ul {
+        padding-left: 0;
+        list-style-position: inside;
     }
 }
