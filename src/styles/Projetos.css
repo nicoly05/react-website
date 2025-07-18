@@ -1,126 +1,85 @@
-
-.lista {
-    width: 100%;
-    height: auto; 
-    min-height: 100vh; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-    background-image: url('../assets/Requisitos.png'); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    padding: 20px; 
-    box-sizing: border-box; 
+.projetosContainer {
+  padding: 40px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+   background-color: black;
+   color: white;
 }
 
-.lista .box {
-    width: 100%;
-    max-width: 600px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+.botoesFiltro {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.lista .box h3 {
-    font-size: 2rem; 
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+.botoesFiltro button {
+  background-color: #ff1493;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
 }
 
-.lista .box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+.botoesFiltro button:hover {
+  background-color: #cc0e74;
 }
 
-.lista .box ul li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(240, 240, 240, 0.9);
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-}
-
-.lista .box ul li:hover {
-    transform: scale(1.02);
-}
-
-.lista .box ul li label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #555;
-    font-size: 1rem;
-}
-
-.lista .box ul li input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+.gradeImagens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */
+  gap: 30px;
+  padding: 20px;
 }
 
 
-@media only screen and (max-width: 768px) {
-    .lista .box {
-        width: 90%; 
-        padding: 20px;
-    }
-
-    .lista .box h3 {
-        font-size: 1.75rem; 
-    }
-
-    .lista .box ul li {
-        flex-direction: column; 
-        text-align: left;
-    }
-
-    .lista .box ul li label {
-        gap: 5px;
-        font-size: 1rem; 
-    }
+.imagemBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #333;
 }
 
-@media only screen and (max-width: 480px) {
-    .lista .box {
-        width: 100%; 
-        padding: 15px;
-    }
+.imagemBox img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
 
-    .lista .box h3 {
-        font-size: 1.5rem; 
-    }
+.imagemBox img:hover {
+  transform: scale(1.05);
+}
 
-    .lista .box ul li {
-        flex-direction: column; 
-        text-align: left;
-        padding: 8px 10px; 
-    }
+.imagemBox h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+}
 
-    .lista .box ul li label {
-        font-size: 0.9rem;
-        gap: 3px;
-    }
+.imagemBox p {
+  font-size: 0.9rem;
+   margin-top: 5px;
+  color: white;
+}
 
-    .lista .box ul li input[type="checkbox"] {
-        width: 18px; 
-        height: 18px;
-    }
+@media screen and (max-width: 1024px) {
+  .gradeImagens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gradeImagens {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

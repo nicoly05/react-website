@@ -1,121 +1,4 @@
-/* .servicos {
-    width: 100%;
-    height: auto; 
-    min-height: 100vh; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-    background-image: url('../assets/Metricas.png'); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    padding: 20px; 
-    box-sizing: border-box; 
-}
 
-.servicos .headerContainer {
-    width: 90%; 
-    max-width: 800px; 
-    padding: 20px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px; 
-    background: rgba(255, 255, 255, 0.8); 
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
-}
-
-.servicos .headerContainer h1 {
-    font-size: 3rem; 
-    font-weight: 600; 
-    color: #121619;
-    margin: 0; 
-}
-
-.servicos .headerContainer button {
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #121619;
-    height: 50px;
-    width: 100%; 
-    max-width: 300px; 
-    text-decoration: none;
-    font-size: 1rem; 
-    transition: background-color 0.3s ease;
-}
-
-.servicos .headerContainer button:hover {
-    background-color: #07090a;
-}
-
-.servicos .headerContainer a {
-    text-decoration: none; 
-}
-
-.servicos .paper {
-    padding: 20px;
-    margin-top: 20px;
-    width: 90%; 
-    max-width: 800px; 
-    background: rgba(255, 255, 255, 0.8); 
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
-}
-
-.servicos .paper h6 {
-    font-weight: bold;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .servicos .headerContainer h1 {
-        font-size: 2.5rem; 
-    }
-
-    .servicos .headerContainer button {
-        font-size: 0.9rem; 
-        height: 45px; 
-    }
-
-    .servicos .paper {
-        padding: 15px; 
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .servicos {
-        padding: 10px; 
-    }
-
-    .servicos .headerContainer {
-        padding: 15px; 
-        background-color: rgba(18, 22, 25, 0.9); 
-        color: white; 
-    }
-
-    .servicos .headerContainer h1 {
-        font-size: 2rem; 
-    }
-
-    .servicos .headerContainer button {
-        font-size: 0.8rem;
-        height: 40px; 
-    }
-
-    .servicos .paper {
-        width: 100%; 
-        padding: 10px; 
-    }
-}
- */
 /* Box 1: Título */
 .boxTitulo {
     width: 100%;
@@ -181,6 +64,7 @@
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* opcional: sombra leve */
+    
 }
 
 /* Box 3: Preto com imagem à direita */
