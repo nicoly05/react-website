@@ -36,7 +36,55 @@
   padding: 20px;
 }
 
+.imagemConteudo {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
+.imagemConteudo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.imagemConteudo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 20, 147, 0.4); /* rosa transparente */
+  backdrop-filter: blur(4px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 20px;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.imagemConteudo:hover .overlay {
+  opacity: 1;
+}
+
+.imagemBox h3,
+.imagemBox p {
+  margin: 5px 0 0 0;
+  color: white;
+  font-family: 'Georgia', serif;
+}
+
+/* 
 .imagemBox {
   display: flex;
   flex-direction: column;
@@ -70,7 +118,7 @@
   font-size: 0.9rem;
    margin-top: 5px;
   color: white;
-}
+} */
 
 @media screen and (max-width: 1024px) {
   .gradeImagens {
