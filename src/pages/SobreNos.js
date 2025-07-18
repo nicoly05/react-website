@@ -1,9 +1,8 @@
 import React from 'react';
 import "../styles/SobreNos.css";
-import img1 from '../assets/Metricas.png';
-import img2 from '../assets/Metricas.png';
-import img3 from '../assets/Metricas.png';
-import MetricasImg from '../assets/Metricas.png';
+import Glaucia from '../assets/Glaucia.jpg';
+import Giovanna from '../assets/Giovanna.jpg';
+import MariaJessica from '../assets/MariaJessica.JPG';
 
 function SobreNos() {
   return(
@@ -14,17 +13,17 @@ function SobreNos() {
   </div>
    <div className="box-imagens">
       <div className="imagem-item">
-        <img src={img1} alt="Imagem 1" />
+        <img src={Glaucia} alt="Imagem 1" />
         <h3>Glaucia</h3>
         <p>Founder, CEO, Marketing, Publicidade, Jornalismo e Relações Públicas</p>
       </div>
       <div className="imagem-item">
-        <img src={img2} alt="Imagem 2" />
+        <img src={Giovanna} alt="Imagem 2" />
         <h3>Giovanna</h3>
         <p>Founder, CEO, Marketing, Publicidade, Jornalismo e Relações Públicas</p>
       </div>
       <div className="imagem-item">
-        <img src={img3} alt="Imagem 3" />
+        <img src={MariaJessica} alt="Imagem 3" />
         <h3>Maria Jéssica</h3>
         <p>Design Gráfica</p>
       </div>
@@ -33,7 +32,7 @@ function SobreNos() {
   {/* Box 2 - Rosa, imagem à esquerda */}
  <div className="boxRosa">
     <div className="boxColuna boxImagem">
-      <img src={MetricasImg} alt="Serviço 1" />
+      <img src={Glaucia} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
       <h2>Glaucia</h2>
@@ -48,13 +47,13 @@ function SobreNos() {
       <p>Descrição sobre a pessoa, experiências e como chegou até a +55 lab</p>
     </div>
     <div className="boxColuna boxImagem">
-      <img src={MetricasImg} alt="Serviço 1" />
+      <img src={Giovanna} alt="Serviço 1" />
     </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
   <div className="boxRosa">
     <div className="boxColuna boxImagem">
-      <img src={MetricasImg} alt="Serviço 1" />
+      <img src={MariaJessica} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
       <h2>Maria Jéssica</h2>
