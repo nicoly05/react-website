@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 
 import '../styles/Servicos.css'; 
 import MetricasImg from '../assets/Metricas.png'; // ajusta o caminho conforme necessário
+import IdentidadeVisual from '../assets/IdVisual.jpg'; 
+import GestaoRedes from '../assets/GestaoRedes.jpg'; 
+import CaptacaoImagens from '../assets/CaptacaoImagens.jpg'; 
+import Edicao from '../assets/Edicao.jpg'; 
+import TrafegoPago from '../assets/TrafegoPago.jpg'; 
+import MotionDesign from '../assets/MotionDesign.jpg'; 
+import TempoReal from '../assets/tempoReal.jpg'; 
 
 function Servicos(){
   return (
@@ -16,7 +23,7 @@ function Servicos(){
   {/* Box 2 - Rosa, imagem à esquerda */}
  <div className="boxRosa">
     <div className="boxColuna boxImagem">
-      <img src={MetricasImg} alt="Serviço 1" />
+      <img src={IdentidadeVisual} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
       <h2>01. Identidade Visual</h2>
@@ -48,13 +55,13 @@ function Servicos(){
       </Link>
     </div>
     <div className="boxColuna boxImagem">
-      <img src={MetricasImg} alt="Serviço 1" />
+      <img src={GestaoRedes} alt="Serviço 1" />
     </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
   <div className="boxRosa">
     <div className="boxColuna boxImagem">
-      <img src={MetricasImg} alt="Serviço 1" />
+      <img src={CaptacaoImagens} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
       <h2>03. Captação de fotos e vídeos</h2>
@@ -85,13 +92,13 @@ function Servicos(){
       </Link>
     </div>
     <div className="boxColuna boxImagem">
-     <img src={MetricasImg} alt="Serviço 1" />
+     <img src={Edicao} alt="Serviço 1" />
     </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
   <div className="boxRosa">
     <div className="boxColuna boxImagem">
-   <img src={MetricasImg} alt="Serviço 1" />
+   <img src={TrafegoPago} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
       <h2>05. Tráfego Pago</h2>
@@ -121,14 +128,14 @@ function Servicos(){
        </Link>
     </div>
     <div className="boxColuna boxImagem">
-   <img src={MetricasImg} alt="Serviço 1" />
+   <img src={MotionDesign} alt="Serviço 1" />
     </div>
   </div>
 
    {/* Box 2 - Rosa, imagem à esquerda */}
   <div className="boxRosa">
     <div className="boxColuna boxImagem">
-   <img src={MetricasImg} alt="Serviço 1" />
+   <img src={TempoReal} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
       <h2>07. Cobertura em Tempo Real</h2>
