@@ -25,7 +25,7 @@ function Servicos(){
     <div className="boxColuna boxImagem">
       <img src={IdentidadeVisual} alt="Serviço 1" />
     </div>
-    <div className="boxColuna boxTexto">
+    <div className="boxColuna boxTexto center">
       <h2>01. Identidade Visual</h2>
       <ul>
         <li>Logotipo</li>
