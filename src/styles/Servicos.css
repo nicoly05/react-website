@@ -1,140 +1,260 @@
-
 /* Box 1: Título */
 .boxTitulo {
     width: 100%;
-    background-color: #000;
-    padding: 60px 40px;
-    text-align: left;
-    font-family: 'Georgia', serif;
-    /* ou outra fonte */
-    font-size: 2rem;
-    /* font-weight: bold; */
-    color: white;
+    background: linear-gradient(135deg, var(--light-pink), var(--soft-pink));
+    padding: 80px 40px;
+    text-align: center;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-text);
 }
 
 .boxTitulo h1 {
-    color: white;
+    color: var(--dark-text);
     font-size: 3rem;
     margin: 0;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .boxTitulo span {
-    color: #ff1492;
-    /* rosa */
+    color: var(--primary-pink);
 }
 
 /* Box 2: Rosa com imagem à esquerda */
 .boxRosa {
     display: flex;
     flex-direction: row;
-    background-color: #ff1492;
-    color: white;
-    padding: 40px 20px;
+    background: white;
+    color: var(--dark-text);
+    padding: 80px 40px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
-    font-family: 'Georgia', serif;
-    /* ou outra fonte */
-    font-size: 2rem;
-    color: white;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
 }
+
+.boxRosa:hover {
+    background: var(--light-pink);
+}
+
 .buttonBoxRosa {
-       color: white;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    background-color: #121619;
+    background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
     height: 50px;
-    width: 100px; 
-    max-width: 300px;
+    padding: 0 35px;
+    max-width: 200px;
     text-decoration: none;
-    text-align: center; 
-    font-size: 1rem; 
-    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.buttonBoxRosa:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 107, 157, 0.4);
 }
 
 .boxRosa .boxImagem img {
     width: 400px;
-    /* ou qualquer tamanho que prefiras */
     height: 500px;
     border-radius: 20px;
-    /* Borda arredondada */
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* opcional: sombra leve */
-    
+    box-shadow: var(--shadow);
+    transition: all 0.4s ease;
+}
+
+.boxRosa:hover .boxImagem img {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
 }
 
 /* Box 3: Preto com imagem à direita */
 .boxPreto {
     display: flex;
     flex-direction: row;
-    background-color: #000;
-    color: white;
-    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--soft-pink), var(--accent-pink));
+    color: var(--dark-text);
+    padding: 80px 40px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
-    font-family: 'Georgia', serif;
-    /* ou outra fonte */
-    font-size: 2rem;
-    color: white;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
 }
+
+.boxPreto:hover {
+    background: linear-gradient(135deg, var(--accent-pink), var(--secondary-pink));
+}
+
 .buttonBoxPreto {
-       color: white;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    background-color: #ff1492;
+    background: var(--dark-text);
     height: 50px;
-    width: 100px; 
-    max-width: 300px;
+    padding: 0 35px;
+    max-width: 200px;
     text-decoration: none;
-    text-align: center; 
-    font-size: 1rem; 
-    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.buttonBoxPreto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
 }
 
 .boxPreto .boxImagem img {
     width: 400px;
-    /* ou qualquer tamanho que prefiras */
     height: 500px;
     border-radius: 20px;
-    /* Borda arredondada */
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* opcional: sombra leve */
+    box-shadow: var(--shadow);
+    transition: all 0.4s ease;
+}
+
+.boxPreto:hover .boxImagem img {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
 }
 
 .boxColuna {
     flex: 1;
-    min-width: 250px;
+    min-width: 300px;
+    max-width: 500px;
 }
 
 .boxTexto h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--dark-text);
 }
 
 .boxTexto ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.boxTexto ul li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--light-text);
+}
+
+.boxTexto ul li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--primary-pink);
+    font-size: 1.2rem;
+}
+
+.boxTexto a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .boxRosa .boxImagem img,
+    .boxPreto .boxImagem img {
+        width: 350px;
+        height: 450px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .boxTitulo {
+        padding: 60px 30px;
+    }
+
+    .boxTitulo h1 {
+        font-size: 2.5rem;
+    }
 
     .boxRosa,
     .boxPreto {
         flex-direction: column;
         text-align: center;
+        padding: 60px 30px;
+        gap: 40px;
+    }
+
+    .boxRosa .boxImagem img,
+    .boxPreto .boxImagem img {
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .boxColuna {
+        min-width: 100%;
+    }
+
+    .boxTexto h2 {
+        font-size: 1.8rem;
     }
 
     .boxTexto ul {
-        padding-left: 0;
-        list-style-position: inside;
+        text-align: left;
+    }
+
+    .boxTexto ul li {
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .boxTitulo {
+        padding: 40px 20px;
+    }
+
+    .boxTitulo h1 {
+        font-size: 2rem;
+    }
+
+    .boxRosa,
+    .boxPreto {
+        padding: 40px 20px;
+    }
+
+    .boxRosa .boxImagem img,
+    .boxPreto .boxImagem img {
+        height: 350px;
+    }
+
+    .boxTexto h2 {
+        font-size: 1.5rem;
+    }
+
+    .buttonBoxRosa,
+    .buttonBoxPreto {
+        height: 45px;
+        padding: 0 25px;
+        font-size: 0.9rem;
     }
 }
