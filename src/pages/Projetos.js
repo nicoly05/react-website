@@ -43,7 +43,7 @@ function Projetos() {
 
   return (
     <div className="projetosContainer">
-      <h1>Galeria de Imagens</h1>
+      <h1>Galeria de Projetos</h1>
 
       <div className="botoesFiltro">
         <button onClick={() => setFiltro('todos')}>Todos</button>

@@ -80,25 +80,9 @@ function Home() {
   {/* Contact Section */}
   <div className="sectionContainer contactSection">
     <div className="sectionContent">
-      <h2>Vamos Trabalhar Juntos?</h2>
-      <p className="sectionDescription">Entre em contacto connosco e transforme a sua visão em realidade</p>
-      <div className="contactInfo">
-        <div className="contactItem">
-          <div className="contactIcon">📧</div>
-          <div className="contactDetails">
-            <h3>Email</h3>
-            <p>mais55lab@gmail.com</p>
-          </div>
-        </div>
-        <div className="contactSocial">
-          <h3>Siga a +55 lab</h3>
-          <a href="https://www.instagram.com/mais55.lab/" target="_blank" rel="noopener noreferrer" className="socialLink">
-            <img src={Instagram} alt="Instagram" />
-            <span>@mais55.lab</span>
-          </a>
-        </div>
-      </div>
-      <Link to="/Contactos" className="sectionLink primary">Contactar Agora →</Link>
+      <h2>Pronto para transformar a sua comunicação?</h2>
+      <p className="sectionDescription">Vamos trabalhar juntos para elevar a sua marca ao próximo nível. Entre em contacto connosco.</p>
+      <a href="https://wa.me/351999888777" className="sectionLink primary">Saiba Mais →</a>
     </div>
   </div>
 
