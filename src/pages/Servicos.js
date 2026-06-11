@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 
 
 import '../styles/Servicos.css'; 
-import MetricasImg from '../assets/Metricas.png'; // ajusta o caminho conforme necessário
-import IdentidadeVisual from '../assets/IdVisual.jpg'; 
+import IdentidadeVisual from '../assets/IdVisual.png'; 
 import GestaoRedes from '../assets/GestaoRedes.jpg'; 
 import CaptacaoImagens from '../assets/CaptacaoImagens.jpg'; 
 import Edicao from '../assets/Edicao.jpg'; 
-import TrafegoPago from '../assets/TrafegoPago.jpg'; 
-import MotionDesign from '../assets/MotionDesign.jpg'; 
+import TrafegoPago from '../assets/TrafegoPago.png'; 
+import MotionDesign from '../assets/MotionDesign.png'; 
 import TempoReal from '../assets/tempoReal.jpg'; 
+import Audiovisual from '../assets/Audiovisual.png'; 
+import DesignGrafico from '../assets/DesignGrafico.png'; 
 
 function Servicos(){
   return (
@@ -145,6 +146,42 @@ function Servicos(){
        <li>Posts atualizados no feed</li>
       </ul>
       <Link to="/Projetos?categoria=7">
+      <button className='buttonBoxRosa'>Exemplos</button>
+      </Link>
+    </div>
+  </div>
+   {/* Box 3 - Preto, imagem à direita */}
+  <div className="boxPreto">
+    <div className="boxColuna boxTexto">
+      <h2>08. Produção Audiovisual</h2>
+      <ul>
+       <li>Vídeos institucionais, promocionais, sociais e outros formatos</li>
+       <li>Captamos momentos, produtos e espaços com olhar cinematográfico e atenção ao detalhe</li>
+       <li>Transformamos as imagens em peças de comunicação cativantes</li>
+       <li>Cuidamos do ritmo, som, cor e narrativa para dar vida a cada projeto</li>
+      </ul>
+      <Link to="/Projetos?categoria=8">
+       <button className='buttonBoxPreto'>Exemplos</button>
+       </Link>
+    </div>
+    <div className="boxColuna boxImagem">
+   <img src={Audiovisual} alt="Serviço 1" />
+    </div>
+  </div>
+
+   {/* Box 2 - Rosa, imagem à esquerda */}
+  <div className="boxRosa">
+    <div className="boxColuna boxImagem">
+   <img src={DesignGrafico} alt="Serviço 1" />
+    </div>
+    <div className="boxColuna boxTexto">
+      <h2>09. Design Gráfico</h2>
+      <ul>
+       <li>Elaboração de grafismos</li>
+       <li>Identidade visual</li>
+       <li>Propostas criativas que fortalecem a sua marca</li>
+      </ul>
+      <Link to="/Projetos?categoria=9">
       <button className='buttonBoxRosa'>Exemplos</button>
       </Link>
     </div>

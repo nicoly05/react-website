@@ -48,12 +48,14 @@ function Projetos() {
       <div className="botoesFiltro">
         <button onClick={() => setFiltro('todos')}>Todos</button>
         <button onClick={() => setFiltro(1)}>Identidade Visual</button>
-        <button onClick={() => setFiltro(2)}>Gestão de Redes</button>
+        <button onClick={() => setFiltro(2)}>Gestão de Redes Sociais</button>
         <button onClick={() => setFiltro(3)}>Captação de Fotos e Vídeos</button>
         <button onClick={() => setFiltro(4)}>Edição de Fotos e Vídeos</button>
         <button onClick={() => setFiltro(5)}>Tráfego Pago</button>
         <button onClick={() => setFiltro(6)}>Motion Design</button>
         <button onClick={() => setFiltro(7)}>Cobertura em tempo real</button>
+        <button onClick={() => setFiltro(8)}>Produção Audiovisual</button>
+        <button onClick={() => setFiltro(9)}>Design Gráfico</button>
       </div>
 
       <div className="gradeImagens">
