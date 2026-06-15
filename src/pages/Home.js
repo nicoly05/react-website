@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "../styles/Home.css"
-import Instagram from '../assets/Instagram.png';
 import HomeImage from '../assets/HomeImage.jpg';
 import InstagramMedia from '../components/InstagramMedia';
 
@@ -44,6 +43,32 @@ function Home() {
     setCurrentIndex(currentIndex >= maxIndex ? 0 : currentIndex + 1);
   };
 
+  // Lista dos serviços (mesmos cards que já tens)
+const servicesList = [
+  { icon: "🎨", title: "Identidade Visual", description: "Logotipos, paletas de cores e manuais de marca" },
+  { icon: "📱", title: "Gestão de Redes", description: "Conteúdo estratégico para redes sociais" },
+  { icon: "📷", title: "Captação de Imagens", description: "Fotografia e vídeo profissional" },
+  { icon: "🎬", title: "Edição de Fotos e Vídeos", description: "Tratamento de imagens e montagem" },
+  { icon: "📱", title: "Tráfego Pago", description: "Campanhas, segmentação e otimização" },
+  { icon: "🎨", title: "Motion Design", description: "Animação de logo e vídeo publicitário" },
+  { icon: "📹", title: "Cobertura em Tempo Real", description: "Stories, reels e lives" },
+  { icon: "🎙️", title: "Produção Audiovisual", description: "Vídeos institucionais e comerciais" },
+  { icon: "🎨", title: "Design Gráfico", description: "Artes, flyers e materiais visuais" }
+];
+
+const [servicesIndex, setServicesIndex] = useState(0);
+const servicesPerPage = 3;
+const maxServicesIndex = Math.max(0, servicesList.length - servicesPerPage);
+
+const handlePrevServices = () => {
+  setServicesIndex(prev => prev === 0 ? maxServicesIndex : prev - 1);
+};
+
+const handleNextServices = () => {
+  setServicesIndex(prev => prev >= maxServicesIndex ? 0 : prev + 1);
+};
+
+
   return (
   <div className="home">
   
@@ -55,53 +80,27 @@ function Home() {
     <div className="sectionContent">
       <h2>Os Nossos Serviços</h2>
       <p className="sectionDescription">Descubra o nosso portfólio de trabalhos criativos e inovadores</p>
-      <div className="previewCards">
-        <div className="previewCard">
-          <div className="cardIcon">🎨</div>
-          <h3>Identidade Visual</h3>
-          <p>Logotipos, paletas de cores e manuais de marca</p>
-        </div>
-        <div className="previewCard">
-          <div className="cardIcon">📱</div>
-          <h3>Gestão de Redes</h3>
-          <p>Conteúdo estratégico para redes sociais</p>
-        </div>
-        <div className="previewCard">
-          <div className="cardIcon">🎬</div>
-          <h3>Captação de Imagens</h3>
-          <p>Fotografia e vídeo profissional</p>
-        </div>
-         <div className="previewCard">
-          <div className="cardIcon">🎨</div>
-          <h3>Edição de Fotos e Vídeos</h3>
-          <p>Tratamento de imagens, montagem de vídeos e eventos com padrão visual da sua marca</p>
-        </div>
-         <div className="previewCard">
-          <div className="cardIcon">🎨</div>
-          <h3>Tráfego Pago</h3>
-          <p>Anúncios, campanhas, segmentação do público, relatórios e otimizações</p>
-        </div>
-         <div className="previewCard">
-          <div className="cardIcon">🎨</div>
-          <h3>Motion Design</h3>
-          <p>Animação de logo e vídeo para publicidade</p>
-        </div>
-         <div className="previewCard">
-          <div className="cardIcon">🎨</div>
-          <h3>Cobertura em Tempo Real</h3>
-          <p>Stories, reels, posts e live em tempo real</p>
-        </div>
-         <div className="previewCard">
-          <div className="cardIcon">🎨</div>
-          <h3>Produção Audiovisual</h3>
-          <p>Logotipos, paletas de cores e manuais de marca</p>
-        </div>
-         <div className="previewCard">
-          <div className="cardIcon">🎨</div>
-          <h3>Design Gráfico</h3>
-          <p>Logotipos, paletas de cores e manuais de marca</p>
+         <div className="services-carousel">
+      <button className="carousel-arrow left" onClick={handlePrevServices}>←</button>
+
+      <div className="services-carousel-container">
+        <div
+          className="services-carousel-track"
+          style={{ transform: `translateX(-${servicesIndex * (100 / 3)}%)` }}
+        >
+          {servicesList.map((service, index) => (
+            <div key={index} className="previewCard carousel-item">
+              <div className="cardIcon">{service.icon}</div>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          ))}
         </div>
       </div>
+
+      <button className="carousel-arrow right" onClick={handleNextServices}>→</button>
+    </div>
+      
       <Link to="/Servicos" className="sectionLink">Ver Todos os Serviços →</Link>
     </div>
   </div>

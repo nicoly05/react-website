@@ -1,0 +1,109 @@
+.service-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  max-width: 380px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Ícone grande no topo */
+.service-icon {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 25px 0 10px 0;
+  background: linear-gradient(135deg, #fff0f6, #ffe1ec);
+}
+
+/* Conteúdo */
+.service-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-pink);
+  margin: 0;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: var(--light-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Tags */
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.service-tag {
+  background: var(--light-pink);
+  color: var(--dark-text);
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.service-tag:hover {
+  background: var(--soft-pink);
+  color: var(--primary-pink);
+}
+
+/* Botão */
+.service-button {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.service-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 157, 0.4);
+}
+
+/* Responsivo */
+@media only screen and (max-width: 480px) {
+  .service-card {
+    max-width: 100%;
+  }
+
+  .service-content {
+    padding: 15px;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+}
