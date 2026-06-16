@@ -16,18 +16,18 @@ import { useSearchParams } from 'react-router-dom';
 
 
 const imagens = [
-  { id: 1, src: Instagram, categoria: 1, titulo: "Instagram", legenda: "Identidade Visual" },
-  { id: 2, src: RTP, categoria: 3, titulo: "RTP", legenda: "Captação de Fotos e Vídeos" },
-  { id: 3, src: PingoDoce, categoria: 1, titulo: "PingoDoce", legenda: "Identidade Visual" },
-  { id: 4, src: Lust, categoria: 7, titulo: "Lust", legenda: "Cobertura em tempo real" },
-  { id: 5, src: TikTok, categoria: 2, titulo: "TikTok", legenda: "Gestão de Redes" },
-  { id: 6, src: Continente, categoria: 2, titulo: "Continente", legenda: "Gestão de Redes" },
-  { id: 7, src: TwitterX, categoria: 5, titulo: "X", legenda: "Tráfego Pago" },
-  { id: 8, src: TGB, categoria: 2, titulo: "TGB", legenda: "Gestão de Redes" },
-  { id: 9, src: Google, categoria: 6, titulo: "Google", legenda: "Motion Design" },
-  { id: 10, src: Apple, categoria: 3, titulo: "Apple", legenda: "Captação de Fotos e Vídeos" },
-  { id: 11, src: Wrestling, categoria: 1, titulo: "Wrestling", legenda: "Identidade Visual" },
-  { id: 12, src: WhatsApp, categoria: 4, titulo: "WhatsApp", legenda: "Edição de Fotos e Vídeos" },
+  { id: 1, src: Instagram, categoria: [1], titulo: "Instagram", legenda: "Identidade Visual" },
+  { id: 2, src: RTP, categoria: [3], titulo: "RTP", legenda: "Captação de Fotos e Vídeos" },
+  { id: 3, src: PingoDoce, categoria: [1], titulo: "PingoDoce", legenda: "Identidade Visual" },
+  { id: 4, src: Lust, categoria: [7], titulo: "Lust", legenda: "Cobertura em tempo real" },
+  { id: 5, src: TikTok, categoria: [2], titulo: "TikTok", legenda: "Gestão de Redes" },
+  { id: 6, src: Continente, categoria: [2], titulo: "Continente", legenda: "Gestão de Redes"},
+  { id: 7, src: TwitterX, categoria: [5, 2], titulo: "X", legenda: "Tráfego Pago" },
+  { id: 8, src: TGB, categoria: [2, 1], titulo: "TGB", legenda: "Gestão de Redes" },
+  { id: 9, src: Google, categoria: [6, 4], titulo: "Google", legenda: "Motion Design" },
+  { id: 10, src: Apple, categoria: [3, 8], titulo: "Apple", legenda: "Captação de Fotos e Vídeos" },
+  { id: 11, src: Wrestling, categoria: [1, 12], titulo: "Wrestling", legenda: "Identidade Visual" },
+  { id: 12, src: WhatsApp, categoria: [4, 2], titulo: "WhatsApp", legenda: "Edição de Fotos e Vídeos" },
 ];
 
 function Projetos() {
@@ -39,7 +39,7 @@ function Projetos() {
 
 
   const imagensFiltradas =
-    filtro === 'todos' ? imagens : imagens.filter((img) => img.categoria === filtro);
+    filtro === 'todos' ? imagens : imagens.filter((img) => img.categoria.includes(filtro));
 
   return (
     <div className="projetosContainer">
@@ -56,6 +56,11 @@ function Projetos() {
         <button onClick={() => setFiltro(7)}>Cobertura em tempo real</button>
         <button onClick={() => setFiltro(8)}>Produção Audiovisual</button>
         <button onClick={() => setFiltro(9)}>Design Gráfico</button>
+        <button onClick={() => setFiltro(10)}>Eventos</button>
+        <button onClick={() => setFiltro(11)}>Estética & Moda</button>
+        <button onClick={() => setFiltro(12)}>Desporto</button>
+        <button onClick={() => setFiltro(13)}>Gastronomia</button>
+        
       </div>
 
       <div className="gradeImagens">
