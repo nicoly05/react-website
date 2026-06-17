@@ -1,32 +1,18 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Projetos.css';
-import Instagram from '../assets/Instagram.png';
-import TikTok from '../assets/TikTok.webp';
-import TwitterX from '../assets/TwitterX.png';
-import Google from '../assets/Google.png';
-import Apple from '../assets/Apple.png';
-import RTP from '../assets/RTP.png';
-import PingoDoce from '../assets/PingoDoce.jpg';
-import Continente from '../assets/Continente.png';
-import Wrestling from '../assets/Wrestling.png';
-import Lust from '../assets/Lust.png';
-import TGB from '../assets/TGB.png';
-import WhatsApp from '../assets/WhatsApp.png';
-import { useSearchParams } from 'react-router-dom';
+import React from 'react';
+import { useParams, Link } from 'react-router-dom';
+import InstagramMedia from '../components/InstagramMedia';
+import '../styles/BrandInstagram.css';
 
-
+// Import the same data from Projetos.js
 const imagens = [
   { 
     id: 1, 
-    src: Instagram, 
-    categoria: [1], 
     titulo: "Instagram", 
     legenda: "Identidade Visual",
     descricao: "Desenvolvimento de identidade visual para Instagram",
     instagramPosts: [
       {
-        instagramUrl: "https://www.instagram.com/p/C1A2B3C4D5E/",
+        instagramUrl: "https://www.instagram.com/reel/DYc50Vex_Qw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         caption: "Identidade visual criada para Instagram",
         serviceTags: ["Identidade Visual"],
         brand: "Instagram"
@@ -42,8 +28,6 @@ const imagens = [
   },
   { 
     id: 2, 
-    src: RTP, 
-    categoria: [3], 
     titulo: "RTP", 
     legenda: "Captação de Fotos e Vídeos",
     descricao: "Captação de fotos e vídeos para RTP",
@@ -59,8 +43,6 @@ const imagens = [
   },
   { 
     id: 3, 
-    src: PingoDoce, 
-    categoria: [1], 
     titulo: "PingoDoce", 
     legenda: "Identidade Visual",
     descricao: "Identidade visual e gestão de redes sociais para Pingo Doce",
@@ -88,8 +70,6 @@ const imagens = [
   },
   { 
     id: 4, 
-    src: Lust, 
-    categoria: [7], 
     titulo: "Lust", 
     legenda: "Cobertura em tempo real",
     descricao: "Cobertura em tempo real para Lust",
@@ -105,8 +85,6 @@ const imagens = [
   },
   { 
     id: 5, 
-    src: TikTok, 
-    categoria: [2], 
     titulo: "TikTok", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para TikTok",
@@ -122,8 +100,6 @@ const imagens = [
   },
   { 
     id: 6, 
-    src: Continente, 
-    categoria: [2], 
     titulo: "Continente", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Continente",
@@ -139,8 +115,6 @@ const imagens = [
   },
   { 
     id: 7, 
-    src: TwitterX, 
-    categoria: [5, 2], 
     titulo: "X", 
     legenda: "Tráfego Pago",
     descricao: "Tráfego pago para X (Twitter)",
@@ -156,8 +130,6 @@ const imagens = [
   },
   { 
     id: 8, 
-    src: TGB, 
-    categoria: [2, 1], 
     titulo: "TGB", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais e identidade visual para TGB",
@@ -173,8 +145,6 @@ const imagens = [
   },
   { 
     id: 9, 
-    src: Google, 
-    categoria: [6, 4], 
     titulo: "Google", 
     legenda: "Motion Design",
     descricao: "Motion design e edição para Google",
@@ -190,8 +160,6 @@ const imagens = [
   },
   { 
     id: 10, 
-    src: Apple, 
-    categoria: [3, 8], 
     titulo: "Apple", 
     legenda: "Captação de Fotos e Vídeos",
     descricao: "Captação de fotos e vídeos para Apple",
@@ -207,8 +175,6 @@ const imagens = [
   },
   { 
     id: 11, 
-    src: Wrestling, 
-    categoria: [1, 12], 
     titulo: "Wrestling", 
     legenda: "Identidade Visual",
     descricao: "Identidade visual para Wrestling",
@@ -224,8 +190,6 @@ const imagens = [
   },
   { 
     id: 12, 
-    src: WhatsApp, 
-    categoria: [4, 2], 
     titulo: "WhatsApp", 
     legenda: "Edição de Fotos e Vídeos",
     descricao: "Edição de fotos e vídeos para WhatsApp",
@@ -241,56 +205,46 @@ const imagens = [
   },
 ];
 
-function Projetos() {
-  // const [filtro, setFiltro] = useState('todos');
+function BrandInstagram() {
+  const { brandId } = useParams();
 
-  const [searchParams] = useSearchParams();
-  const categoriaParam = searchParams.get('categoria');
-  const [filtro, setFiltro] = useState(categoriaParam ? Number(categoriaParam) : 'todos');
+  const brand = imagens.find(img => img.id === parseInt(brandId));
 
-
-  const imagensFiltradas =
-    filtro === 'todos' ? imagens : imagens.filter((img) => img.categoria.includes(filtro));
+  if (!brand) {
+    return (
+      <div className="brand-instagram-container">
+        <h1>Marca não encontrada</h1>
+        <Link to="/Projetos">Voltar para Projetos</Link>
+      </div>
+    );
+  }
 
   return (
-    <div className="projetosContainer">
-      <h1>Galeria de Projetos</h1>
-
-      <div className="botoesFiltro">
-        <button onClick={() => setFiltro('todos')}>Todos</button>
-        <button onClick={() => setFiltro(1)}>Identidade Visual</button>
-        <button onClick={() => setFiltro(2)}>Gestão de Redes Sociais</button>
-        <button onClick={() => setFiltro(3)}>Captação de Fotos e Vídeos</button>
-        <button onClick={() => setFiltro(4)}>Edição de Fotos e Vídeos</button>
-        <button onClick={() => setFiltro(5)}>Tráfego Pago</button>
-        <button onClick={() => setFiltro(6)}>Motion Design</button>
-        <button onClick={() => setFiltro(7)}>Cobertura em tempo real</button>
-        <button onClick={() => setFiltro(8)}>Produção Audiovisual</button>
-        <button onClick={() => setFiltro(9)}>Design Gráfico</button>
-        <button onClick={() => setFiltro(10)}>Eventos</button>
-        <button onClick={() => setFiltro(11)}>Estética & Moda</button>
-        <button onClick={() => setFiltro(12)}>Desporto</button>
-        <button onClick={() => setFiltro(13)}>Gastronomia</button>
-        
+    <div className="brand-instagram-container">
+      <div className="brand-header">
+        <Link to="/Projetos" className="back-link">← Voltar para Projetos</Link>
+        <h1 className="brand-title">{brand.titulo}</h1>
+        <p className="brand-category">{brand.legenda}</p>
+        <p className="brand-description">{brand.descricao}</p>
       </div>
-
-      <div className="gradeImagens">
-        {imagensFiltradas.map((img) => (
-          <Link to={`/brand-instagram/${img.id}`} key={img.id} className="imagemBox">
-            <div className="imagemConteudo">
-              <img src={img.src} alt={img.titulo} />
-              <div className="overlay">
-                <h3>{img.titulo}</h3>
-                <p>{img.legenda}</p>
-              </div>
-            </div>
-          </Link>
-
-        ))}
-      </div>
-
+        <div className="instagram-posts">
+          {brand.instagramPosts && brand.instagramPosts.length > 0 ? (
+            brand.instagramPosts.map((post, index) => (
+              <InstagramMedia
+                key={index}
+                instagramUrl={post.instagramUrl}
+                caption={post.caption}
+                serviceTags={post.serviceTags}
+                brand={post.brand}
+              />
+            ))
+          ) : (
+            <p className="no-content">Sem conteúdo de Instagram disponível para esta marca.</p>
+          )}
+        </div>
+     
     </div>
   );
 }
 
-export default Projetos;
+export default BrandInstagram;

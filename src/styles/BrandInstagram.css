@@ -1,0 +1,152 @@
+.brand-instagram-container {
+  width: 100%;
+  margin: 0;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+}
+
+.brand-header {
+  margin-bottom: 40px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ff6b9d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ff4081;
+  transform: translateX(-5px);
+}
+
+.brand-instagram-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.brand-title {
+  color: #ff6b9d;
+}
+
+.brand-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+}
+
+.brand-category {
+  font-size: 1rem;
+  color: #ff6b9d;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.instagram-content {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 30px 0;
+}
+
+.instagram-posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.profile-button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.profile-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b9d, #ff4081);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
+}
+
+.profile-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+}
+
+.no-content {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .instagram-posts {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .brand-instagram-container {
+    padding: 30px 15px;
+  }
+
+  .brand-instagram-container h1 {
+    font-size: 2rem;
+  }
+
+  .brand-description {
+    font-size: 1rem;
+  }
+
+  .brand-title {
+    font-size: 1.5rem;
+  }
+
+  .instagram-content {
+    padding: 25px;
+  }
+
+  .instagram-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .instagram-posts {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .profile-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .instagram-posts {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

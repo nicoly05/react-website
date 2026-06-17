@@ -45,15 +45,15 @@ function Home() {
 
   // Lista dos serviços (mesmos cards que já tens)
 const servicesList = [
-  { icon: "🎨", title: "Identidade Visual", description: "Logotipos, paletas de cores e manuais de marca" },
-  { icon: "📱", title: "Gestão de Redes", description: "Conteúdo estratégico para redes sociais" },
-  { icon: "📷", title: "Captação de Imagens", description: "Fotografia e vídeo profissional" },
-  { icon: "🎬", title: "Edição de Fotos e Vídeos", description: "Tratamento de imagens e montagem" },
-  { icon: "📱", title: "Tráfego Pago", description: "Campanhas, segmentação e otimização" },
-  { icon: "🎨", title: "Motion Design", description: "Animação de logo e vídeo publicitário" },
-  { icon: "📹", title: "Cobertura em Tempo Real", description: "Stories, reels e lives" },
-  { icon: "🎙️", title: "Produção Audiovisual", description: "Vídeos institucionais e comerciais" },
-  { icon: "🎨", title: "Design Gráfico", description: "Artes, flyers e materiais visuais" }
+  { icon: "🎨", title: "Identidade Visual", description: "Logotipos, paletas de cores e manuais de marca", categoria: 1 },
+  { icon: "📱", title: "Gestão de Redes", description: "Conteúdo estratégico para redes sociais", categoria: 2 },
+  { icon: "📷", title: "Captação de Imagens", description: "Fotografia e vídeo profissional", categoria: 3 },
+  { icon: "🎬", title: "Edição de Fotos e Vídeos", description: "Tratamento de imagens e montagem", categoria: 4 },
+  { icon: "📱", title: "Tráfego Pago", description: "Campanhas, segmentação e otimização", categoria: 5 },
+  { icon: "🎨", title: "Motion Design", description: "Animação de logo e vídeo publicitário", categoria: 6 },
+  { icon: "📹", title: "Cobertura em Tempo Real", description: "Stories, reels e lives", categoria: 7 },
+  { icon: "🎙️", title: "Produção Audiovisual", description: "Vídeos institucionais e comerciais", categoria: 8 },
+  { icon: "🎨", title: "Design Gráfico", description: "Artes, flyers e materiais visuais", categoria: 9 }
 ];
 
 const [servicesIndex, setServicesIndex] = useState(0);
@@ -89,11 +89,11 @@ const handleNextServices = () => {
           style={{ transform: `translateX(-${servicesIndex * (100 / 3)}%)` }}
         >
           {servicesList.map((service, index) => (
-            <div key={index} className="previewCard carousel-item">
+            <Link key={index} to={`/Servicos?categoria=${service.categoria}`} className="previewCard carousel-item">
               <div className="cardIcon">{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -147,34 +147,38 @@ const handleNextServices = () => {
       </div>
       
       <div className="servicesList">
+        <Link to="/Projetos?categoria=10">
         <div className="serviceItem">
           <span className="serviceNumber">01</span>
           <div className="serviceInfo">
-            <h3>Identidade Visual</h3>
-            <p>Logotipo, paleta de cores, tipografia e manual da marca</p>
+            <h3>Eventos</h3>
           </div>
         </div>
+        </Link>
+        <Link to="/Projetos?categoria=11">
         <div className="serviceItem">
           <span className="serviceNumber">02</span>
           <div className="serviceInfo">
-            <h3>Gestão de Redes Sociais</h3>
-            <p>Planejamento estratégico, criação de conteúdo e agendamento</p>
+            <h3>Estética e Moda</h3>
           </div>
         </div>
+        </Link>
+        <Link to="/Projetos?categoria=12">
         <div className="serviceItem">
           <span className="serviceNumber">03</span>
           <div className="serviceInfo">
-            <h3>Captação de Fotos e Vídeos</h3>
-            <p>Ensaios, bastidores e vídeos institucionais</p>
+            <h3>Desporto</h3>
           </div>
         </div>
+        </Link>
+        <Link to="/Projetos?categoria=13">
         <div className="serviceItem">
           <span className="serviceNumber">04</span>
           <div className="serviceInfo">
-            <h3>Tráfego Pago</h3>
-            <p>Campanhas no Instagram e Facebook com segmentação precisa</p>
+            <h3>Gastronomia</h3>
           </div>
         </div>
+        </Link>
       </div>
       <Link to="/Projetos" className="sectionLink">Explorar Todos os Projetos →</Link>
     </div>

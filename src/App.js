@@ -6,6 +6,7 @@ import Contactos from "./pages/Contactos.js";
 import Servicos from "./pages/Servicos.js";
 import SobreNos from "./pages/SobreNos.js";
 import Projetos from "./pages/Projetos.js";
+import BrandInstagram from "./pages/BrandInstagram.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Servicos" element={<Servicos />} />
           <Route path="/SobreNos" element={<SobreNos />} />
            <Route path="/Projetos" element={<Projetos />} />
+           <Route path="/brand-instagram/:brandId" element={<BrandInstagram />} />
         </Routes>
       </Router>
     </div>

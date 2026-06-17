@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 
 
 import '../styles/Servicos.css'; 
@@ -14,6 +14,20 @@ import Audiovisual from '../assets/Audiovisual.png';
 import DesignGrafico from '../assets/DesignGrafico.png'; 
 
 function Servicos(){
+  const [searchParams] = useSearchParams();
+  const categoriaParam = searchParams.get('categoria');
+
+  useEffect(() => {
+    if (categoriaParam) {
+      const element = document.getElementById(`servico-${categoriaParam}`);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, [categoriaParam]);
+
   return (
     <div className="servicos">
   {/* Box 1 - Título com destaque */}
@@ -22,7 +36,7 @@ function Servicos(){
   </div>
 
   {/* Box 2 - Rosa, imagem à esquerda */}
- <div className="boxRosa">
+ <div className="boxRosa" id="servico-1">
     <div className="boxColuna boxImagem">
       <img src={IdentidadeVisual} alt="Serviço 1" />
     </div>
@@ -34,6 +48,8 @@ function Servicos(){
         <li>Manual da marca</li>
         <li>Arte para eventos (convites, painéis, brindes)</li>
         <li>Personalização com propósito</li>
+        <li>Gerimos a presença online da tua marca de forma estratégica e criativa</li>
+        <li>Planeamos conteúdos, criamos narrativas consistentes e mantemos a comunicação com o teu público</li>
       </ul>
       <Link to="/Projetos?categoria=1">
       <button className='buttonBoxRosa'>Exemplos</button>
@@ -42,7 +58,7 @@ function Servicos(){
   </div>
 
   {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto">
+  <div className="boxPreto" id="servico-2">
     <div className="boxColuna boxTexto">
       <h2>02. Gestão de Redes Sociais</h2>
       <ul>
@@ -60,7 +76,7 @@ function Servicos(){
     </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa">
+  <div className="boxRosa" id="servico-3">
     <div className="boxColuna boxImagem">
       <img src={CaptacaoImagens} alt="Serviço 1" />
     </div>
@@ -79,7 +95,7 @@ function Servicos(){
   </div>
 
   {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto">
+  <div className="boxPreto" id="servico-4">
     <div className="boxColuna boxTexto">
       <h2>04. Edição de fotos e vídeos</h2>
       <ul>
@@ -97,14 +113,14 @@ function Servicos(){
     </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa">
+  <div className="boxRosa" id="servico-5">
     <div className="boxColuna boxImagem">
    <img src={TrafegoPago} alt="Serviço 1" />
     </div>
     <div className="boxColuna boxTexto">
       <h2>05. Tráfego Pago</h2>
       <ul>
-        <li>Anúncios no Instagram e Facebook</li>
+        <li>Anúncios na Meta, Google, Tiktok Ads e outros</li>
         <li>Campanhas com objetivos claros</li>
         <li>Segmentação do público Ideal</li>
         <li>Relatórios e otimizações</li>
@@ -116,13 +132,14 @@ function Servicos(){
   </div>
 
   {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto">
+  <div className="boxPreto" id="servico-6">
     <div className="boxColuna boxTexto">
       <h2>06. Motion Design</h2>
       <ul>
-       <li>Animação de logo simples, entre 3 a 10 segundos</li>
-       <li>Vídeo para publicidade em motion design</li>
-       <li>Animação entre 30 a 60 segundos</li>
+       <li>Animação de logo e outros elementos</li>
+       <li>Vídeo explicativos</li>
+       <li>Grafismos dinâmicos</li>
+       <li>Tornamos seu conteúdo mais envolvente</li>
       </ul>
       <Link to="/Projetos?categoria=6">
        <button className='buttonBoxPreto'>Exemplos</button>
@@ -134,7 +151,7 @@ function Servicos(){
   </div>
 
    {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa">
+  <div className="boxRosa" id="servico-7">
     <div className="boxColuna boxImagem">
    <img src={TempoReal} alt="Serviço 1" />
     </div>
@@ -151,7 +168,7 @@ function Servicos(){
     </div>
   </div>
    {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto">
+  <div className="boxPreto" id="servico-8">
     <div className="boxColuna boxTexto">
       <h2>08. Produção Audiovisual</h2>
       <ul>
@@ -170,7 +187,7 @@ function Servicos(){
   </div>
 
    {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa">
+  <div className="boxRosa" id="servico-9">
     <div className="boxColuna boxImagem">
    <img src={DesignGrafico} alt="Serviço 1" />
     </div>

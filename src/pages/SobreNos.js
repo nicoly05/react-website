@@ -1,65 +1,27 @@
 import React from 'react';
 import "../styles/SobreNos.css";
-import Glaucia from '../assets/Glaucia.jpg';
-import Giovanna from '../assets/Giovanna.jpg';
-import MariaJessica from '../assets/MariaJessica.JPG';
+import HomeImage from '../assets/HomeImage.jpg';
+import GlauciaJulita from '../assets/GlauciaJulita.png';
 
 function SobreNos() {
   return(
 <div className='sobreNos'>
     <div className="boxTitulo">
     <h1>Conheça a nossa equipa</h1>
-    <h2>Pequena descrição sobre a equipa</h2>
-  </div>
-   <div className="box-imagens">
-      <div className="imagem-item">
-        <img src={Glaucia} alt="Imagem 1" />
-        <h3>Glaucia</h3>
-        <p>Founder, CEO, Marketing, Publicidade, Jornalismo e Relações Públicas</p>
-      </div>
-      <div className="imagem-item">
-        <img src={Giovanna} alt="Imagem 2" />
-        <h3>Giovanna</h3>
-        <p>Founder, CEO, Marketing, Publicidade, Jornalismo e Relações Públicas</p>
-      </div>
-      <div className="imagem-item">
-        <img src={MariaJessica} alt="Imagem 3" />
-        <h3>Maria Jéssica</h3>
-        <p>Design Gráfica</p>
-      </div>
-    </div>
-
-  {/* Box 2 - Rosa, imagem à esquerda */}
- <div className="boxRosa">
-    <div className="boxColuna boxImagem">
-      <img src={Glaucia} alt="Serviço 1" />
-    </div>
-    <div className="boxColuna boxTexto">
-      <h2>Glaucia</h2>
-     <p>Descrição sobre a pessoa, experiências e como chegou até a +55 lab</p>
-    </div>
   </div>
 
-  {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto">
-    <div className="boxColuna boxTexto">
-      <h2>Giovanna</h2>
-      <p>Descrição sobre a pessoa, experiências e como chegou até a +55 lab</p>
+    <div className="boxTitulo">
+      <h3>Unidas pela criatividade e pela paixão pela comunicação. Ambas formadas em Ciências da Comunicação, começámos a explorar o universo digital através da criação de filtros para o Instagram, uma experiência que rapidamente despertou a vontade de ir mais além. Dessa curiosidade nasceu a +55 Lab, um laboratório criativo onde a imaginação se encontra com a estratégia. O que começou como um pequeno projeto experimental tornou-se num local de ideias em constante evolução, dedicado a ajudar marcas e pessoas a comunicarem de forma autêntica, estética e eficaz.  </h3>
     </div>
-    <div className="boxColuna boxImagem">
-      <img src={Giovanna} alt="Serviço 1" />
+
+    <div className="imagemCentralizada">
+      <img src={GlauciaJulita} alt="Glaucia Julita" />
     </div>
-  </div>
-  {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa">
-    <div className="boxColuna boxImagem">
-      <img src={MariaJessica} alt="Serviço 1" />
+
+    <div className="boxTitulo">
+      <h3>Hoje, a +55 Lab oferece uma gama completa de serviços que vai muito além: Gestão de redes sociais, Captação e edição de vídeo, Motion design, Tráfego pago e Criação de identidades visuais. Acreditamos que cada projeto é uma oportunidade para criar algo único e é isso que nos move todos os dias. </h3>
     </div>
-    <div className="boxColuna boxTexto">
-      <h2>Maria Jéssica</h2>
-      <p>Descrição sobre a pessoa, experiências e como chegou até a +55 lab</p>
-    </div>
-  </div>
+
 </div>
   );
 };
