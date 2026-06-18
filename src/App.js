@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home.js";
 import Contactos from "./pages/Contactos.js";
 import Servicos from "./pages/Servicos.js";
@@ -24,6 +25,7 @@ function App() {
            <Route path="/Projetos" element={<Projetos />} />
            <Route path="/brand-instagram/:brandId" element={<BrandInstagram />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

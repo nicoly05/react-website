@@ -3,7 +3,7 @@
   margin: 0;
   padding: 60px 20px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 50%, #fce4ec 100%);
+  background: linear-gradient(135deg, #fff0f5 0%, #fce4ec 50%, #f8bbd0 100%);
 }
 
 .brand-header {
@@ -17,7 +17,7 @@
 .back-link {
   display: inline-block;
   margin-bottom: 20px;
-  color: #ff6b9d;
+  color: #e91e8c;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -25,7 +25,7 @@
 }
 
 .back-link:hover {
-  color: #ff4081;
+  color: #c2185b;
   transform: translateX(-5px);
 }
 
@@ -37,7 +37,7 @@
 }
 
 .brand-title {
-  color: #ff6b9d;
+  color: #e91e8c;
   font-size: 3.5rem;
 }
 
@@ -51,7 +51,7 @@
 
 .brand-category {
   font-size: 1.1rem;
-  color: #ff6b9d;
+  color: #e91e8c;
   font-weight: 600;
   margin-top: 15px;
   text-transform: uppercase;
@@ -86,7 +86,7 @@
 .loading-placeholder {
   padding: 20px;
   text-align: center;
-  color: #ff6b9d;
+  color: #e91e8c;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
@@ -99,7 +99,7 @@
 
 .profile-button {
   display: inline-block;
-  background: linear-gradient(135deg, #ff6b9d, #ff4081);
+  background: linear-gradient(135deg, #e91e8c, #c2185b);
   color: white;
   padding: 15px 40px;
   border-radius: 30px;
@@ -107,12 +107,12 @@
   font-size: 1.1rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
+  box-shadow: 0 5px 15px rgba(233, 30, 140, 0.3);
 }
 
 .profile-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+  box-shadow: 0 8px 25px rgba(233, 30, 140, 0.4);
 }
 
 .no-content {

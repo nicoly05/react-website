@@ -226,7 +226,7 @@
 
 .carousel-container {
   flex: 1;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -234,11 +234,20 @@
   display: flex;
   transition: transform 0.5s ease;
   gap: 20px;
+  width: 100%;
 }
 
 .carousel-item {
   flex: 0 0 calc(33.333% - 13.33px);
   min-width: 0;
+  overflow: visible;
+  height: auto;
+}
+
+.carousel-item .instagram-embed-wrapper {
+  width: 100%;
+  height: auto;
+  overflow: visible;
 }
 
 .carousel-arrow {
@@ -616,6 +625,7 @@
 
   .carousel-item {
     flex: 0 0 100%;
+    overflow: visible;
   }
 
   .carousel-arrow {
@@ -681,6 +691,7 @@
 
   .carousel-item {
     flex: 0 0 100%;
+    overflow: visible;
   }
 
   .carousel-arrow {

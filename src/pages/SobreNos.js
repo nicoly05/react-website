@@ -1,6 +1,5 @@
 import React from 'react';
 import "../styles/SobreNos.css";
-import HomeImage from '../assets/HomeImage.jpg';
 import GlauciaJulita from '../assets/GlauciaJulita.png';
 
 function SobreNos() {

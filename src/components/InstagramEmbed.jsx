@@ -6,9 +6,6 @@ export default function InstagramEmbed({ url }) {
   const embedRef = useRef(null)
 
   useEffect(() => {
-    // Limpa a URL removendo query parameters
-    const cleanUrl = url.split('?')[0]
-
     // Carrega o script do Instagram se ainda não estiver carregado
     const loadInstagramEmbed = () => {
       if (window.instgrm) {

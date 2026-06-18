@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "../styles/Home.css"
-import HomeImage from '../assets/HomeImage.jpg';
+import HomeImage from '../assets/HomeImage.png';
 import InstagramEmbed from '../components/InstagramEmbed';
 
 
@@ -12,23 +12,17 @@ function Home() {
     {
       serviceTags: ["Gestão de Redes", "Conteúdo"],
       brand: "Benfica 1",
-      instagramUrl: "https://www.instagram.com/reel/DYc50Vex_Qw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      instagramUrl: "https://www.instagram.com/reel/DM8Eht2owfI/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
     },
     {
       serviceTags: ["Gestão de Redes", "Conteúdo"],
-      serviceTags: ["Gestão de Redes", "Conteúdo"],
       brand: "Benfica 2",
-      instagramUrl: "https://www.instagram.com/reel/DYc50Vex_Qw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      instagramUrl: "https://www.instagram.com/reel/DMN7QC5ISCP/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
     },
     {
       serviceTags: ["Gestão de Redes", "Conteúdo"],
       brand: "Benfica 3",
-      instagramUrl: "https://www.instagram.com/reel/DYc50Vex_Qw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-    },
-    {
-      serviceTags: ["Gestão de Redes", "Conteúdo"],
-      brand: "Benfica 4",
-      instagramUrl: "https://www.instagram.com/reel/DYc50Vex_Qw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      instagramUrl: "https://www.instagram.com/reel/DOgNzgdDAft/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
     }
   ];
 
@@ -113,13 +107,6 @@ const handleNextServices = () => {
       
       {/* Instagram Carousel */}
       <div className="instagram-carousel">
-        <button 
-          className="carousel-arrow carousel-arrow-left" 
-          onClick={handlePrevious}
-        >
-          ←
-        </button>
-        
         <div className="carousel-container">
           <div 
             className="carousel-track"
@@ -134,13 +121,6 @@ const handleNextServices = () => {
             ))}
           </div>
         </div>
-        
-        <button 
-          className="carousel-arrow carousel-arrow-right" 
-          onClick={handleNext}
-        >
-          →
-        </button>
       </div>
       
       <div className="servicesList">

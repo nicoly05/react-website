@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Projetos.css';
-import TikTok from '../assets/TikTok.webp';
+import Victory from '../assets/Victory.png';
 import TwitterX from '../assets/TwitterX.png';
 import Google from '../assets/Google.png';
 import Apple from '../assets/Apple.png';
-import RTP from '../assets/RTP.png';
-import PingoDoce from '../assets/PingoDoce.jpg';
-import Continente from '../assets/Continente.png';
+import JanahEstetica from '../assets/JanahEstetica.png';
+import BenficaCascaisMalveira from '../assets/BenficaCascaisMalveira.png';
+import Ruche from '../assets/Ruche.png';
 import WrestleFest from '../assets/WrestleFest.png';
-import Lust from '../assets/Lust.png';
+import UAPovoense from '../assets/UAPovoense.png';
 import TGB from '../assets/TGB.png';
-import WhatsApp from '../assets/WhatsApp.png';
+import WhatsApp from '../assets/Whatsapp.png';
 import { useSearchParams } from 'react-router-dom';
 
 
@@ -19,65 +19,58 @@ const imagens = [
   { 
     id: 1, 
     src: WrestleFest, 
-    categoria: [1], 
+    categoria: [1, 10], 
     titulo: "WrestleFest", 
     legenda: "Identidade Visual",
-    descricao: "Desenvolvimento de identidade visual para WrestleFest",
-    profileUrl: "https://www.instagram.com/instagram/"
+    descricao: "Desenvolvimento de identidade visual para WrestleFest"
   },
   { 
     id: 2, 
-    src: RTP, 
-    categoria: [3], 
-    titulo: "RTP", 
+    src: JanahEstetica, 
+    categoria: [3,11], 
+    titulo: "Janah", 
     legenda: "Captação de Fotos e Vídeos",
-    descricao: "Captação de fotos e vídeos para RTP",
-    profileUrl: "https://www.instagram.com/rtp/"
+    descricao: "Captação de fotos e vídeos para RTP"
   },
   { 
     id: 3, 
-    src: PingoDoce, 
-    categoria: [1], 
-    titulo: "PingoDoce", 
+    src: BenficaCascaisMalveira, 
+    categoria: [1, 12], 
+    titulo: "Benfica Cascais Malveira", 
     legenda: "Identidade Visual",
-    descricao: "Identidade visual e gestão de redes sociais para Pingo Doce",
-    profileUrl: "https://www.instagram.com/pingodoce/"
+    descricao: "Identidade visual e gestão de redes sociais para Benfica Cascais Malveira"
   },
   { 
     id: 4, 
-    src: Lust, 
-    categoria: [7], 
-    titulo: "Lust", 
+    src: UAPovoense, 
+    categoria: [7, 12], 
+    titulo: "UAPovoense", 
     legenda: "Cobertura em tempo real",
-    descricao: "Cobertura em tempo real para Lust",
-    profileUrl: "https://www.instagram.com/lust/"
+    descricao: "Cobertura em tempo real para UAPovoense"
   },
   { 
     id: 5, 
-    src: TikTok, 
-    categoria: [2], 
-    titulo: "TikTok", 
+    src: Victory, 
+    categoria: [2, 12], 
+    titulo: "Victory", 
     legenda: "Gestão de Redes",
-    descricao: "Gestão de redes sociais para TikTok",
-    profileUrl: "https://www.instagram.com/tiktok/"
+    descricao: "Gestão de redes sociais para Victory"
   },
   { 
     id: 6, 
-    src: Continente, 
-    categoria: [2], 
-    titulo: "Continente", 
+    src: Ruche, 
+    categoria: [2, 13], 
+    titulo: "Ruche", 
     legenda: "Gestão de Redes",
-    descricao: "Gestão de redes sociais para Continente",
-    profileUrl: "https://www.instagram.com/continente/"
+    descricao: "Gestão de redes sociais para Ruche"
   },
   { 
     id: 7, 
     src: TwitterX, 
-    categoria: [5, 2], 
+    categoria: [5, 2, 9], 
     titulo: "X", 
     legenda: "Tráfego Pago",
-    descricao: "Tráfego pago para X (Twitter)",
-    profileUrl: "https://www.instagram.com/x/"
+    descricao: "Tráfego pago para X (Twitter)"
   },
   { 
     id: 8, 
@@ -85,8 +78,7 @@ const imagens = [
     categoria: [2, 1], 
     titulo: "TGB", 
     legenda: "Gestão de Redes",
-    descricao: "Gestão de redes sociais e identidade visual para TGB",
-    profileUrl: "https://www.instagram.com/tgb/"
+    descricao: "Gestão de redes sociais e identidade visual para TGB"
   },
   { 
     id: 9, 
@@ -94,8 +86,7 @@ const imagens = [
     categoria: [6, 4], 
     titulo: "Google", 
     legenda: "Motion Design",
-    descricao: "Motion design e edição para Google",
-    profileUrl: "https://www.instagram.com/google/"
+    descricao: "Motion design e edição para Google"
   },
   { 
     id: 10, 
@@ -103,8 +94,7 @@ const imagens = [
     categoria: [3, 8], 
     titulo: "Apple", 
     legenda: "Captação de Fotos e Vídeos",
-    descricao: "Captação de fotos e vídeos para Apple",
-    profileUrl: "https://www.instagram.com/apple/"
+    descricao: "Captação de fotos e vídeos para Apple"
   },
   { 
     id: 11, 
@@ -112,8 +102,7 @@ const imagens = [
     categoria: [4, 2], 
     titulo: "WhatsApp", 
     legenda: "Edição de Fotos e Vídeos",
-    descricao: "Edição de fotos e vídeos para WhatsApp",
-    profileUrl: "https://www.instagram.com/whatsapp/"
+    descricao: "Edição de fotos e vídeos para WhatsApp"
   },
 ];
 
