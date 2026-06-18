@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "../styles/Home.css"
 import HomeImage from '../assets/HomeImage.jpg';
-import InstagramMedia from '../components/InstagramMedia';
+import InstagramEmbed from '../components/InstagramEmbed';
 
 
 function Home() {
@@ -127,11 +127,8 @@ const handleNextServices = () => {
           >
             {instagramPosts.map((post, index) => (
               <div key={index} className="carousel-item">
-                <InstagramMedia
-                  caption={post.caption}
-                  serviceTags={post.serviceTags}
-                  brand={post.brand}
-                  instagramUrl={post.instagramUrl}
+                <InstagramEmbed
+                  url={post.instagramUrl}
                 />
               </div>
             ))}

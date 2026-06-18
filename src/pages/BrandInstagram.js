@@ -1,27 +1,68 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import InstagramMedia from '../components/InstagramMedia';
+import InstagramEmbed from '../components/InstagramEmbed';
 import '../styles/BrandInstagram.css';
 
 // Import the same data from Projetos.js
 const imagens = [
   { 
     id: 1, 
-    titulo: "Instagram", 
+    titulo: "WrestleFest", 
     legenda: "Identidade Visual",
-    descricao: "Desenvolvimento de identidade visual para Instagram",
+    descricao: "Desenvolvimento de identidade visual para WrestleFest",
     instagramPosts: [
       {
-        instagramUrl: "https://www.instagram.com/reel/DYc50Vex_Qw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-        caption: "Identidade visual criada para Instagram",
+        instagramUrl: "https://www.instagram.com/reel/DO3_NfjCLPR/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+        caption: "Identidade visual criada para WrestleFest",
         serviceTags: ["Identidade Visual"],
-        brand: "Instagram"
+        brand: "WrestleFest"
       },
       {
-        instagramUrl: "https://www.instagram.com/p/C2B3C4D5E6F/",
+        instagramUrl: "https://www.instagram.com/reel/DOwojtYCPs7/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
         caption: "Outro exemplo de identidade visual",
         serviceTags: ["Identidade Visual"],
-        brand: "Instagram"
+        brand: "WrestleFest"
+      },
+      {
+        instagramUrl: "https://www.instagram.com/reel/DOy1RKbiFA6/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+        serviceTags: ["Identidade Visual"],
+        brand: "WrestleFest"
+      },
+      {
+        instagramUrl: "https://www.instagram.com/reel/DOt8J57iCDF/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+        caption: "Outro exemplo de identidade visual",
+        serviceTags: ["Identidade Visual"],
+        brand: "WrestleFest"
+      },
+      {
+        instagramUrl: "https://www.instagram.com/reel/DOUOfl6iOE6/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+        caption: "Outro exemplo de identidade visual",
+        serviceTags: ["Identidade Visual"],
+        brand: "WrestleFest"
+      },
+      {
+        instagramUrl: "https://www.instagram.com/reel/DOrP5u5iKii/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+        caption: "Outro exemplo de identidade visual",
+        serviceTags: ["Identidade Visual"],
+        brand: "WrestleFest"
+      },
+      {
+        instagramUrl: "https://www.instagram.com/reel/DOHXG8cCOcx/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+        caption: "Outro exemplo de identidade visual",
+        serviceTags: ["Identidade Visual"],
+        brand: "WrestleFest"
+      },
+      {
+        instagramUrl: "https://www.instagram.com/reel/DN6AJ_viDp_/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+        caption: "Outro exemplo de identidade visual",
+        serviceTags: ["Identidade Visual"],
+        brand: "WrestleFest"
+      },
+      {
+        instagramUrl: "https://www.instagram.com/reel/DNwEWNxUGjC/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+        caption: "Outro exemplo de identidade visual",
+        serviceTags: ["Identidade Visual"],
+        brand: "WrestleFest"
       }
     ],
     profileUrl: "https://www.instagram.com/instagram/"
@@ -68,141 +109,6 @@ const imagens = [
     ],
     profileUrl: "https://www.instagram.com/pingodoce/"
   },
-  { 
-    id: 4, 
-    titulo: "Lust", 
-    legenda: "Cobertura em tempo real",
-    descricao: "Cobertura em tempo real para Lust",
-    instagramPosts: [
-      {
-        instagramUrl: "https://www.instagram.com/p/C9I0J1K2L3M/",
-        caption: "Cobertura em tempo real para Lust",
-        serviceTags: ["Cobertura em tempo real"],
-        brand: "Lust"
-      }
-    ],
-    profileUrl: "https://www.instagram.com/lust/"
-  },
-  { 
-    id: 5, 
-    titulo: "TikTok", 
-    legenda: "Gestão de Redes",
-    descricao: "Gestão de redes sociais para TikTok",
-    instagramPosts: [
-      {
-        instagramUrl: "https://www.instagram.com/p/C0J1K2L3M4N/",
-        caption: "Gestão de redes sociais para TikTok",
-        serviceTags: ["Gestão de Redes"],
-        brand: "TikTok"
-      }
-    ],
-    profileUrl: "https://www.instagram.com/tiktok/"
-  },
-  { 
-    id: 6, 
-    titulo: "Continente", 
-    legenda: "Gestão de Redes",
-    descricao: "Gestão de redes sociais para Continente",
-    instagramPosts: [
-      {
-        instagramUrl: "https://www.instagram.com/p/C1K2L3M4N5O/",
-        caption: "Gestão de redes sociais para Continente",
-        serviceTags: ["Gestão de Redes"],
-        brand: "Continente"
-      }
-    ],
-    profileUrl: "https://www.instagram.com/continente/"
-  },
-  { 
-    id: 7, 
-    titulo: "X", 
-    legenda: "Tráfego Pago",
-    descricao: "Tráfego pago para X (Twitter)",
-    instagramPosts: [
-      {
-        instagramUrl: "https://www.instagram.com/p/C2L3M4N5O6P/",
-        caption: "Tráfego pago para X (Twitter)",
-        serviceTags: ["Tráfego Pago"],
-        brand: "X"
-      }
-    ],
-    profileUrl: "https://www.instagram.com/x/"
-  },
-  { 
-    id: 8, 
-    titulo: "TGB", 
-    legenda: "Gestão de Redes",
-    descricao: "Gestão de redes sociais e identidade visual para TGB",
-    instagramPosts: [
-      {
-        instagramUrl: "https://www.instagram.com/p/C3M4N5O6P7Q/",
-        caption: "Gestão de redes sociais e identidade visual para TGB",
-        serviceTags: ["Gestão de Redes", "Identidade Visual"],
-        brand: "TGB"
-      }
-    ],
-    profileUrl: "https://www.instagram.com/tgb/"
-  },
-  { 
-    id: 9, 
-    titulo: "Google", 
-    legenda: "Motion Design",
-    descricao: "Motion design e edição para Google",
-    instagramPosts: [
-      {
-        instagramUrl: "https://www.instagram.com/p/C4N5O6P7Q8R/",
-        caption: "Motion design e edição para Google",
-        serviceTags: ["Motion Design"],
-        brand: "Google"
-      }
-    ],
-    profileUrl: "https://www.instagram.com/google/"
-  },
-  { 
-    id: 10, 
-    titulo: "Apple", 
-    legenda: "Captação de Fotos e Vídeos",
-    descricao: "Captação de fotos e vídeos para Apple",
-    instagramPosts: [
-      {
-        instagramUrl: "https://www.instagram.com/p/C5O6P7Q8R9S/",
-        caption: "Captação de fotos e vídeos para Apple",
-        serviceTags: ["Captação de Fotos e Vídeos"],
-        brand: "Apple"
-      }
-    ],
-    profileUrl: "https://www.instagram.com/apple/"
-  },
-  { 
-    id: 11, 
-    titulo: "Wrestling", 
-    legenda: "Identidade Visual",
-    descricao: "Identidade visual para Wrestling",
-    instagramPosts: [
-      {
-        instagramUrl: "https://www.instagram.com/p/C6P7Q8R9S0T/",
-        caption: "Identidade visual para Wrestling",
-        serviceTags: ["Identidade Visual"],
-        brand: "Wrestling"
-      }
-    ],
-    profileUrl: "https://www.instagram.com/wrestling/"
-  },
-  { 
-    id: 12, 
-    titulo: "WhatsApp", 
-    legenda: "Edição de Fotos e Vídeos",
-    descricao: "Edição de fotos e vídeos para WhatsApp",
-    instagramPosts: [
-      {
-        instagramUrl: "https://www.instagram.com/p/C7Q8R9S0T1U/",
-        caption: "Edição de fotos e vídeos para WhatsApp",
-        serviceTags: ["Edição de Fotos e Vídeos"],
-        brand: "WhatsApp"
-      }
-    ],
-    profileUrl: "https://www.instagram.com/whatsapp/"
-  },
 ];
 
 function BrandInstagram() {
@@ -221,8 +127,9 @@ function BrandInstagram() {
 
   return (
     <div className="brand-instagram-container">
-      <div className="brand-header">
-        <Link to="/Projetos" className="back-link">← Voltar para Projetos</Link>
+      <Link to="/Projetos" className="back-link">← Voltar para Projetos</Link>
+       <div className="brand-header">
+       
         <h1 className="brand-title">{brand.titulo}</h1>
         <p className="brand-category">{brand.legenda}</p>
         <p className="brand-description">{brand.descricao}</p>
@@ -230,12 +137,9 @@ function BrandInstagram() {
         <div className="instagram-posts">
           {brand.instagramPosts && brand.instagramPosts.length > 0 ? (
             brand.instagramPosts.map((post, index) => (
-              <InstagramMedia
+              <InstagramEmbed
                 key={index}
-                instagramUrl={post.instagramUrl}
-                caption={post.caption}
-                serviceTags={post.serviceTags}
-                brand={post.brand}
+                url={post.instagramUrl}
               />
             ))
           ) : (

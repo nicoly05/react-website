@@ -1,13 +1,17 @@
 .brand-instagram-container {
   width: 100%;
   margin: 0;
-  padding: 40px 20px;
+  padding: 60px 20px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 50%, #fce4ec 100%);
 }
 
 .brand-header {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .back-link {
@@ -26,7 +30,7 @@
 }
 
 .brand-instagram-container h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #333;
   margin: 0 0 20px 0;
@@ -34,41 +38,58 @@
 
 .brand-title {
   color: #ff6b9d;
+  font-size: 3.5rem;
 }
 
 .brand-description {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   color: #555;
   max-width: 800px;
+  margin: 0 auto 15px auto;
 }
 
 .brand-category {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ff6b9d;
   font-weight: 600;
-  margin-top: 10px;
-}
-
-.instagram-content {
-  background: white;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.instagram-content h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
-  margin: 0 0 30px 0;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .instagram-posts {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 40px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instagram-posts blockquote {
+  margin: 0;
+  width: 100%;
+}
+
+.instagram-media {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.instagram-embed-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.loading-placeholder {
+  padding: 20px;
+  text-align: center;
+  color: #ff6b9d;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
 
 .profile-button-container {
@@ -103,17 +124,27 @@
 
 @media only screen and (max-width: 1024px) {
   .instagram-posts {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .brand-instagram-container h1,
+  .brand-title {
+    font-size: 2.5rem;
+  }
+
+  .brand-description {
+    font-size: 1.1rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .brand-instagram-container {
-    padding: 30px 15px;
+    padding: 40px 15px;
   }
 
-  .brand-instagram-container h1 {
+  .brand-instagram-container h1,
+  .brand-title {
     font-size: 2rem;
   }
 
@@ -121,16 +152,8 @@
     font-size: 1rem;
   }
 
-  .brand-title {
-    font-size: 1.5rem;
-  }
-
-  .instagram-content {
-    padding: 25px;
-  }
-
-  .instagram-content h2 {
-    font-size: 1.5rem;
+  .brand-category {
+    font-size: 1rem;
   }
 
   .instagram-posts {
@@ -145,8 +168,21 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .brand-instagram-container {
+    padding: 30px 10px;
+  }
+
+  .brand-instagram-container h1,
+  .brand-title {
+    font-size: 1.8rem;
+  }
+
+  .brand-description {
+    font-size: 0.95rem;
+  }
+
   .instagram-posts {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 20px;
   }
 }
