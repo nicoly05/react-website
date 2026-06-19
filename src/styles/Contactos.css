@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(135deg, #fff0f5 0%, #fce4ec 50%, #f8bbd0 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
     overflow: hidden;
@@ -19,8 +19,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 30% 50%, rgba(255, 107, 157, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 50%, rgba(255, 143, 179, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 50%, rgba(233, 30, 140, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(240, 98, 146, 0.1) 0%, transparent 50%);
     z-index: 1;
 }
 
@@ -35,7 +35,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background: white;
+  background: #000000;
   border-radius: 30px;
   box-shadow: var(--shadow);
   text-align: center;
@@ -54,12 +54,9 @@
 }
 
 .headerContainer h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary-pink);
     text-align: center;
     margin: 0;
     letter-spacing: -0.5px;
@@ -129,10 +126,10 @@
   justify-content: center;
   gap: 15px;
   font-size: 1.4rem;
-  color: #444;
+  color: #ffffff;
   margin: 0;
   padding: 20px 30px;
-  background: linear-gradient(135deg, #fff0f5, #fce4ec);
+  background: linear-gradient(135deg, var(--dark-gray), var(--medium-gray));
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(233, 30, 140, 0.1);
   transition: all 0.3s ease;
@@ -143,6 +140,31 @@
 .contact-info p:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 30px rgba(233, 30, 140, 0.2);
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px 30px;
+  background: var(--dark-gray);
+  border: 2px solid var(--primary-pink);
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(233, 30, 140, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(233, 30, 140, 0.2);
+  background: var(--medium-gray);
 }
 
 .contact-info .icon {

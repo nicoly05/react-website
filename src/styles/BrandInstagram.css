@@ -3,7 +3,7 @@
   margin: 0;
   padding: 60px 20px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #fff0f5 0%, #fce4ec 50%, #f8bbd0 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
 }
 
 .brand-header {
@@ -32,7 +32,7 @@
 .brand-instagram-container h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #333;
+  color: #ffffff;
   margin: 0 0 20px 0;
 }
 
@@ -44,7 +44,7 @@
 .brand-description {
   font-size: 1.3rem;
   line-height: 1.8;
-  color: #555;
+  color: #b0b0b0;
   max-width: 800px;
   margin: 0 auto 15px auto;
 }
@@ -88,7 +88,7 @@
   text-align: center;
   color: #e91e8c;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(45, 45, 45, 0.5);
   border-radius: 10px;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .no-content {
-  color: #777;
+  color: #b0b0b0;
   font-style: italic;
   text-align: center;
   padding: 20px;

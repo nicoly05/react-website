@@ -2,7 +2,7 @@
   padding: 80px 40px;
   text-align: center;
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #fff0f5 0%, #fce4ec 50%, #f8bbd0 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
   color: var(--dark-text);
   min-height: 100vh;
 }
@@ -34,26 +34,26 @@
 }
 
 .botoesFiltro button {
-  background: white;
-  color: var(--dark-text);
-  border: 2px solid var(--soft-pink);
+  background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
+  color: white;
+  border: 2px solid var(--primary-pink);
   padding: 12px 24px;
   border-radius: 50px;
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.1);
+  box-shadow: 0 4px 15px rgba(233, 30, 140, 0.3);
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .botoesFiltro button:hover,
 .botoesFiltro button.active {
-  background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
-  color: white;
-  border-color: transparent;
+  background: white;
+  color: var(--primary-pink);
+  border-color: var(--primary-pink);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+  box-shadow: 0 8px 25px rgba(233, 30, 140, 0.4);
 }
 
 .gradeImagens {
@@ -93,7 +93,7 @@
   overflow: hidden;
   background: white;
   box-shadow: var(--shadow);
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .imagemConteudo:hover {

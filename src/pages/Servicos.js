@@ -36,10 +36,7 @@ function Servicos(){
   </div>
 
   {/* Box 2 - Rosa, imagem à esquerda */}
- <div className="boxRosa" id="servico-1">
-    <div className="boxColuna boxImagem">
-      <img src={IdentidadeVisual} alt="Serviço 1" />
-    </div>
+ <div className="boxRosa" id="servico-1" style={{ backgroundImage: `url(${IdentidadeVisual})` }}>
     <div className="boxColuna boxTexto center">
       <h2>01. Identidade Visual</h2>
       <ul>
@@ -58,7 +55,7 @@ function Servicos(){
   </div>
 
   {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto" id="servico-2">
+  <div className="boxPreto" id="servico-2" style={{ backgroundImage: `url(${GestaoRedes})` }}>
     <div className="boxColuna boxTexto">
       <h2>02. Gestão de Redes Sociais</h2>
       <ul>
@@ -71,15 +68,9 @@ function Servicos(){
       <button className='buttonBoxPreto'>Exemplos</button>
       </Link>
     </div>
-    <div className="boxColuna boxImagem">
-      <img src={GestaoRedes} alt="Serviço 1" />
-    </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-3">
-    <div className="boxColuna boxImagem">
-      <img src={CaptacaoImagens} alt="Serviço 1" />
-    </div>
+  <div className="boxRosa" id="servico-3" style={{ backgroundImage: `url(${CaptacaoImagens})` }}>
     <div className="boxColuna boxTexto">
       <h2>03. Captação de fotos e vídeos</h2>
       <ul>
@@ -95,7 +86,7 @@ function Servicos(){
   </div>
 
   {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto" id="servico-4">
+  <div className="boxPreto" id="servico-4" style={{ backgroundImage: `url(${Edicao})` }}>
     <div className="boxColuna boxTexto">
       <h2>04. Edição de fotos e vídeos</h2>
       <ul>
@@ -108,15 +99,9 @@ function Servicos(){
       <button className='buttonBoxPreto'>Exemplos</button>
       </Link>
     </div>
-    <div className="boxColuna boxImagem">
-     <img src={Edicao} alt="Serviço 1" />
-    </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-5">
-    <div className="boxColuna boxImagem">
-   <img src={TrafegoPago} alt="Serviço 1" />
-    </div>
+  <div className="boxRosa" id="servico-5" style={{ backgroundImage: `url(${TrafegoPago})` }}>
     <div className="boxColuna boxTexto">
       <h2>05. Tráfego Pago</h2>
       <ul>
@@ -132,7 +117,7 @@ function Servicos(){
   </div>
 
   {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto" id="servico-6">
+  <div className="boxPreto" id="servico-6" style={{ backgroundImage: `url(${MotionDesign})` }}>
     <div className="boxColuna boxTexto">
       <h2>06. Motion Design</h2>
       <ul>
@@ -145,16 +130,10 @@ function Servicos(){
        <button className='buttonBoxPreto'>Exemplos</button>
        </Link>
     </div>
-    <div className="boxColuna boxImagem">
-   <img src={MotionDesign} alt="Serviço 1" />
-    </div>
   </div>
 
    {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-7">
-    <div className="boxColuna boxImagem">
-   <img src={TempoReal} alt="Serviço 1" />
-    </div>
+  <div className="boxRosa" id="servico-7" style={{ backgroundImage: `url(${TempoReal})` }}>
     <div className="boxColuna boxTexto">
       <h2>07. Cobertura em Tempo Real</h2>
       <ul>
@@ -168,7 +147,7 @@ function Servicos(){
     </div>
   </div>
    {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto" id="servico-8">
+  <div className="boxPreto" id="servico-8" style={{ backgroundImage: `url(${Audiovisual})` }}>
     <div className="boxColuna boxTexto">
       <h2>08. Produção Audiovisual</h2>
       <ul>
@@ -181,16 +160,10 @@ function Servicos(){
        <button className='buttonBoxPreto'>Exemplos</button>
        </Link>
     </div>
-    <div className="boxColuna boxImagem">
-   <img src={Audiovisual} alt="Serviço 1" />
-    </div>
   </div>
 
    {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-9">
-    <div className="boxColuna boxImagem">
-   <img src={DesignGrafico} alt="Serviço 1" />
-    </div>
+  <div className="boxRosa" id="servico-9" style={{ backgroundImage: `url(${DesignGrafico})` }}>
     <div className="boxColuna boxTexto">
       <h2>09. Design Gráfico</h2>
       <ul>

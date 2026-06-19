@@ -1,6 +1,6 @@
 .boxTitulo {
     width: 100%;
-    background: linear-gradient(135deg, var(--light-pink), var(--soft-pink));
+    background: #000000;
     padding: 80px 40px;
     text-align: center;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,7 +31,7 @@
   align-items: flex-start;
   gap: 40px;
   padding: 80px 40px;
-  background: white;
+  background: #000000;
   flex-wrap: wrap;
 }
 
@@ -86,7 +86,7 @@
 .boxRosa {
     display: flex;
     flex-direction: row;
-    background: white;
+    background: #000000;
     color: var(--dark-text);
     padding: 80px 40px;
     width: 100%;
@@ -120,7 +120,7 @@
 .boxPreto {
     display: flex;
     flex-direction: row;
-    background: linear-gradient(135deg, var(--soft-pink), var(--accent-pink));
+    background: #000000;
     color: var(--dark-text);
     padding: 80px 40px;
     width: 100%;
@@ -174,7 +174,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: #000000;
   padding: 40px;
   margin: 30px 0;
 }

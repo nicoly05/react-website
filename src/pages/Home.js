@@ -79,9 +79,9 @@ const handleNextServices = () => {
 
       <div className="services-carousel-container">
         <div
-          className="services-carousel-track"
-          style={{ transform: `translateX(-${servicesIndex * (100 / 3)}%)` }}
-        >
+  className="services-carousel-track"
+  style={{ transform: `translateX(-${servicesIndex * (100 / 3)}%)` }}
+>
           {servicesList.map((service, index) => (
             <Link key={index} to={`/Servicos?categoria=${service.categoria}`} className="previewCard carousel-item">
               <div className="cardIcon">{service.icon}</div>

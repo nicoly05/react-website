@@ -1,5 +1,5 @@
 .service-card {
-  background: white;
+  background: var(--medium-gray);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -21,7 +21,7 @@
   font-size: 3.5rem;
   text-align: center;
   padding: 25px 0 10px 0;
-  background: linear-gradient(135deg, #fff0f5, #fce4ec);
+  background: linear-gradient(135deg, var(--dark-gray), var(--medium-gray));
 }
 
 /* Conteúdo */

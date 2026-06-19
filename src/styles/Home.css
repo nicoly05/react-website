@@ -13,7 +13,7 @@
 
 .heroImage {
   width: 100%;
-  height: 40vh;
+  height: 48vh;
   object-fit: cover;
   border-radius: 0;
   box-shadow: none;
@@ -161,34 +161,36 @@
 
 /* Projects Section */
 .projectsSection {
-  background: white;
+  background: var(--dark-gray);
 }
 
 .previewCards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   margin: 20px 0;
+  gap: 1rem;
 }
 
 .previewCard {
-  background: var(--light-pink);
+  background: var(--dark-gray);
   padding: 40px 30px;
   border-radius: 20px;
   text-align: center;
   transition: all 0.4s ease;
-  box-shadow: var(--shadow);
+  box-shadow: none;
   animation: fadeIn 0.6s ease;
   margin-top: 40px;
   text-decoration: none;
   color: inherit;
   display: block;
+  border: 2px solid var(--primary-pink);
 }
 
 .previewCard:hover {
   transform: translateY(-10px);
-  box-shadow: var(--shadow-hover);
-  background: var(--soft-pink);
+  box-shadow: var(--shadow);
+  background: var(--medium-gray);
 }
 
 .cardIcon {
@@ -212,7 +214,7 @@
 
 /* Services Section */
 .servicesSection {
-  background: linear-gradient(135deg, var(--soft-pink), var(--accent-pink));
+  background: linear-gradient(135deg, var(--dark-gray), var(--medium-gray));
 }
 
 /* Instagram Carousel */
@@ -278,9 +280,9 @@
 }
 
 .servicesList {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   width: 100%;
   max-width: 800px;
   margin: 20px 0;
@@ -290,11 +292,13 @@
   display: flex;
   align-items: flex-start;
   gap: 25px;
-  background: white;
-  padding: 30px;
+  background: #000000;
+  padding: 40px;
   border-radius: 15px;
   transition: all 0.3s ease;
   box-shadow: var(--shadow);
+  border: 2px solid var(--primary-pink);
+  min-height: 150px;
 }
 
 .serviceItem:hover {
@@ -305,17 +309,14 @@
 .serviceNumber {
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-pink);
   min-width: 60px;
 }
 
 .serviceInfo h3 {
  font-size: 2rem;
   font-weight: 700;
-  color: black;
+  color: white;
   min-width: 60px;
 }
 
@@ -328,7 +329,7 @@
 
 /* Contact Section */
 .contactSection {
-  background: white;
+  background: #000000;
 }
 
 .contactInfo {
@@ -450,17 +451,23 @@
 .services-carousel-container {
   overflow: hidden;
   width: 100%;
-  
 }
 
 .services-carousel-track {
   display: flex;
+  width: 100%;
   transition: transform 0.5s ease;
+  gap: 0;
 }
 
 .carousel-item {
-  min-width: calc(100% / 3);
+  flex: 0 0 calc(100% / 3);
   box-sizing: border-box;
+  padding: 0;
+}
+
+.carousel-item .previewCard {
+  margin: 0;
 }
 
 /* Setas laterais */

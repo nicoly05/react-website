@@ -1,7 +1,7 @@
 /* Box 1: Título */
 .boxTitulo {
     width: 100%;
-    background: linear-gradient(135deg, var(--light-pink), var(--soft-pink));
+    background: linear-gradient(135deg, var(--dark-gray), var(--medium-gray));
     padding: 80px 40px;
     text-align: center;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,7 +27,9 @@
 .boxRosa {
     display: flex;
     flex-direction: row;
-    background: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--dark-text);
     padding: 80px 40px;
     width: 100%;
@@ -40,7 +42,7 @@
 }
 
 .boxRosa:hover {
-    background: var(--light-pink);
+    background: var(--medium-gray);
 }
 
 .buttonBoxRosa {
@@ -85,7 +87,9 @@
 .boxPreto {
     display: flex;
     flex-direction: row;
-    background: linear-gradient(135deg, var(--soft-pink), var(--accent-pink));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--dark-text);
     padding: 80px 40px;
     width: 100%;
@@ -98,7 +102,7 @@
 }
 
 .boxPreto:hover {
-    background: linear-gradient(135deg, var(--accent-pink), var(--secondary-pink));
+    background: linear-gradient(135deg, var(--light-gray), var(--medium-gray));
 }
 
 .buttonBoxPreto {
@@ -106,7 +110,7 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    background: var(--dark-text);
+    background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
     height: 50px;
     padding: 0 35px;
     max-width: 200px;
@@ -115,14 +119,14 @@
     font-size: 1rem;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(233, 30, 140, 0.3);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .buttonBoxPreto:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 35px rgba(233, 30, 140, 0.4);
 }
 
 .boxPreto .boxImagem img {

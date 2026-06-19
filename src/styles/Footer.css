@@ -1,6 +1,6 @@
 .footer {
-  background: white;
-  color: black;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
+  color: white;
   padding: 60px 40px 20px;
   margin-top: auto;
 }
@@ -30,7 +30,7 @@
 .footer-section p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: black;
+  color: #b0b0b0;
 }
 
 .footer-section ul {
@@ -42,7 +42,7 @@
 }
 
 .footer-section ul li a {
-  color: black;
+  color: #b0b0b0;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -52,7 +52,7 @@
 }
 
 .footer-section ul li {
-  color: black;
+  color: #b0b0b0;
   font-size: 0.95rem;
 }
 
@@ -65,7 +65,7 @@
 
 .footer-bottom p {
   font-size: 0.9rem;
-  color: black;
+  color: #b0b0b0;
 }
 
 @media screen and (max-width: 768px) {
