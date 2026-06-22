@@ -65,9 +65,13 @@ const handleNextServices = () => {
 
   return (
   <div className="home">
+
+    {/* Hero Section */}
+    <img src={HomeImage} alt="Hero" className="heroImage" />
+    
   
-  {/* Hero Section */}
-  <img src={HomeImage} alt="Hero" className="heroImage" />
+  
+  
 
   {/* Projects Preview Section */}
   <div className="sectionContainer projectsSection">
@@ -83,7 +87,7 @@ const handleNextServices = () => {
   style={{ transform: `translateX(-${servicesIndex * (100 / 3)}%)` }}
 >
           {servicesList.map((service, index) => (
-            <Link key={index} to={`/Servicos?categoria=${service.categoria}`} className="previewCard carousel-item">
+            <Link key={index} to={`/Servicos?categoria=${service.categoria}`} className={`previewCard carousel-item ${index === servicesIndex + 1 ? 'middle-card' : ''}`}>
               <div className="cardIcon">{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>

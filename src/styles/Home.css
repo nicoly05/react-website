@@ -466,6 +466,11 @@
   padding: 0;
 }
 
+.carousel-item.middle-card {
+  padding: 20px 0;
+
+}
+
 .carousel-item .previewCard {
   margin: 0;
 }

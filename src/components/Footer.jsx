@@ -44,7 +44,7 @@ function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; 2026 Mais55 Lab. Todos os direitos reservados.</p>
+        <p>&copy; 2026 +55 Lab. Agência de comunicação. Portugal</p>
       </div>
     </footer>
   );
