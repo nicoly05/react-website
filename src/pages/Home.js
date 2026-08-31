@@ -39,13 +39,13 @@ function Home() {
 
   // Lista dos serviços (mesmos cards que já tens)
 const servicesList = [
-  { icon: "🎨", title: "Identidade Visual", description: "Logotipos, paletas de cores e manuais de marca", categoria: 1 },
-  { icon: "📱", title: "Gestão de Redes", description: "Conteúdo estratégico para redes sociais", categoria: 2 },
-  { icon: "📷", title: "Captação de Imagens", description: "Fotografia e vídeo profissional", categoria: 3 },
-  { icon: "🎬", title: "Edição de Fotos e Vídeos", description: "Tratamento de imagens e montagem", categoria: 4 },
-  { icon: "📹", title: "Cobertura em Tempo Real", description: "Stories, reels e lives", categoria: 7 },
-  { icon: "🎙️", title: "Produção Audiovisual", description: "Vídeos institucionais e comerciais", categoria: 8 },
-  { icon: "🎨", title: "Design Gráfico", description: "Artes, flyers e materiais visuais", categoria: 9 }
+  { title: "Identidade Visual", description: "Logotipos, paletas de cores e manuais de marca", categoria: 1 },
+  { title: "Gestão de Redes", description: "Conteúdo estratégico para redes sociais", categoria: 2 },
+  { title: "Captação de Imagens", description: "Fotografia e vídeo profissional", categoria: 3 },
+  { title: "Edição de Fotos e Vídeos", description: "Tratamento de imagens e montagem", categoria: 4 },
+  { title: "Cobertura em Tempo Real", description: "Stories, reels e lives", categoria: 7 },
+  { title: "Produção Audiovisual", description: "Vídeos institucionais e comerciais", categoria: 8 },
+  { title: "Design Gráfico", description: "Artes, flyers e materiais visuais", categoria: 9 }
 ];
 
 const [servicesIndex, setServicesIndex] = useState(0);

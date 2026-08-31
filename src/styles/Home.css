@@ -155,7 +155,7 @@
 
 /* Projects Section */
 .projectsSection {
-  background: var(--dark-gray);
+  background: #0b0b0b;
 }
 
 .previewCards {
@@ -167,7 +167,7 @@
 }
 
 .previewCard {
-  background: var(--dark-gray);
+  background: #0b0b0b;
   padding: 40px 30px;
   border-radius: 20px;
   text-align: center;
@@ -531,6 +531,7 @@
   align-items: center;
   margin: 30px 0;
   gap: 20px;
+
 }
 
 .services-carousel-container {
@@ -548,12 +549,11 @@
 .carousel-item {
   flex: 0 0 calc(100% / 3);
   box-sizing: border-box;
-  padding: 0;
+  padding: 20px 20px;
 }
 
 .carousel-item.middle-card {
-  padding: 20px 0;
-
+  padding: 20px 20px;
 }
 
 .carousel-item .previewCard {
