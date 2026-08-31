@@ -175,6 +175,26 @@
     font-size: 1.2rem;
 }
 
+/* Cores específicas para .boxRosa */
+.boxRosa .boxTexto h2,
+.boxRosa .boxTexto ul li {
+    color: #1A1A1A;
+}
+
+.boxRosa .boxTexto ul li::before {
+    color: var(--primary-pink);
+}
+
+/* Cores específicas para .boxPreto */
+.boxPreto .boxTexto h2,
+.boxPreto .boxTexto ul li {
+    color: #FFFFFF;
+}
+
+.boxPreto .boxTexto ul li::before {
+    color: var(--primary-pink);
+}
+
 .boxTexto a {
     text-decoration: none;
 }

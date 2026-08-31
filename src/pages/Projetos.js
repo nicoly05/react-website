@@ -77,19 +77,18 @@ function Projetos() {
       <h1>Galeria de Projetos</h1>
 
       <div className="botoesFiltro">
-        <button onClick={() => setFiltro('todos')}>Todos</button>
-        <button onClick={() => setFiltro(1)}>Identidade Visual</button>
-        <button onClick={() => setFiltro(2)}>Gestão de Redes Sociais</button>
-        <button onClick={() => setFiltro(3)}>Captação de Fotos e Vídeos</button>
-        <button onClick={() => setFiltro(4)}>Edição de Fotos e Vídeos</button>
-        <button onClick={() => setFiltro(7)}>Cobertura em tempo real</button>
-        <button onClick={() => setFiltro(8)}>Produção Audiovisual</button>
-        <button onClick={() => setFiltro(9)}>Design Gráfico</button>
-        <button onClick={() => setFiltro(10)}>Eventos</button>
-        <button onClick={() => setFiltro(11)}>Estética & Moda</button>
-        <button onClick={() => setFiltro(12)}>Desporto</button>
-        <button onClick={() => setFiltro(13)}>Gastronomia</button>
-        
+        <button className={filtro === 'todos' ? 'active' : ''} onClick={() => setFiltro('todos')}>Todos</button>
+        <button className={filtro === 1 ? 'active' : ''} onClick={() => setFiltro(1)}>Identidade Visual</button>
+        <button className={filtro === 2 ? 'active' : ''} onClick={() => setFiltro(2)}>Gestão de Redes Sociais</button>
+        <button className={filtro === 3 ? 'active' : ''} onClick={() => setFiltro(3)}>Captação de Fotos e Vídeos</button>
+        <button className={filtro === 4 ? 'active' : ''} onClick={() => setFiltro(4)}>Edição de Fotos e Vídeos</button>
+        <button className={filtro === 7 ? 'active' : ''} onClick={() => setFiltro(7)}>Cobertura em tempo real</button>
+        <button className={filtro === 8 ? 'active' : ''} onClick={() => setFiltro(8)}>Produção Audiovisual</button>
+        <button className={filtro === 9 ? 'active' : ''} onClick={() => setFiltro(9)}>Design Gráfico</button>
+        <button className={filtro === 10 ? 'active' : ''} onClick={() => setFiltro(10)}>Eventos</button>
+        <button className={filtro === 11 ? 'active' : ''} onClick={() => setFiltro(11)}>Estética & Moda</button>
+        <button className={filtro === 12 ? 'active' : ''} onClick={() => setFiltro(12)}>Desporto</button>
+        <button className={filtro === 13 ? 'active' : ''} onClick={() => setFiltro(13)}>Gastronomia</button>
       </div>
 
       <div className="gradeImagens">
