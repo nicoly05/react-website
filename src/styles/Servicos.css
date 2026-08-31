@@ -46,7 +46,7 @@
 }
 
 .buttonBoxRosa {
-    color: white;
+    color: #FFFFFF;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -59,14 +59,14 @@
     font-size: 1rem;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+    box-shadow: 0 8px 25px rgba(212, 83, 126, 0.3);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .buttonBoxRosa:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(255, 107, 157, 0.4);
+    box-shadow: 0 12px 35px rgba(212, 83, 126, 0.4);
 }
 
 .boxRosa .boxImagem img {
@@ -119,14 +119,14 @@
     font-size: 1rem;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(233, 30, 140, 0.3);
+    box-shadow: 0 8px 25px rgba(212, 83, 126, 0.3);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .buttonBoxPreto:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(233, 30, 140, 0.4);
+    box-shadow: 0 12px 35px rgba(212, 83, 126, 0.4);
 }
 
 .boxPreto .boxImagem img {

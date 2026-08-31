@@ -17,7 +17,7 @@
 .back-link {
   display: inline-block;
   margin-bottom: 20px;
-  color: #e91e8c;
+  color: #D4537E;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -25,19 +25,19 @@
 }
 
 .back-link:hover {
-  color: #c2185b;
+  color: #B43A63;
   transform: translateX(-5px);
 }
 
 .brand-instagram-container h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0 0 20px 0;
 }
 
 .brand-title {
-  color: #e91e8c;
+  color: #D4537E;
   font-size: 3.5rem;
 }
 
@@ -51,7 +51,7 @@
 
 .brand-category {
   font-size: 1.1rem;
-  color: #e91e8c;
+  color: #D4537E;
   font-weight: 600;
   margin-top: 15px;
   text-transform: uppercase;
@@ -99,7 +99,7 @@
 
 .profile-button {
   display: inline-block;
-  background: linear-gradient(135deg, #e91e8c, #c2185b);
+  background: linear-gradient(135deg, #D4537E, #B43A63);
   color: white;
   padding: 15px 40px;
   border-radius: 30px;
@@ -107,12 +107,12 @@
   font-size: 1.1rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(233, 30, 140, 0.3);
+  box-shadow: 0 5px 15px rgba(212, 83, 126, 0.3);
 }
 
 .profile-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(233, 30, 140, 0.4);
+  box-shadow: 0 8px 25px rgba(212, 83, 126, 0.4);
 }
 
 .no-content {

@@ -13,8 +13,8 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, #1A1A1A 0%, #1a1a1a 50%, #2d2d2d 100%);
+  color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -31,20 +31,20 @@ html {
 
 /* Modern dark feminine color palette */
 :root {
-  --primary-pink: #e91e8c;
-  --secondary-pink: #f06292;
-  --accent-pink: #f48fb1;
-  --soft-pink: #fce4ec;
-  --light-pink: #fff0f5;
-  --dark-text: #ffffff;
-  --light-text: #b0b0b0;
-  --white: #ffffff;
-  --black: #000000;
-  --dark-gray: #1a1a1a;
-  --medium-gray: #2d2d2d;
+  --primary-pink: #D4537E;
+  --secondary-pink: #E57C95;
+  --accent-pink: #EFA2B8;
+  --soft-pink: #F6DDE6;
+  --light-pink: #FFF0F5;
+  --dark-text: #FFFFFF;
+  --light-text: #B0B0B0;
+  --white: #FFFFFF;
+  --black: #1A1A1A;
+  --dark-gray: #1A1A1A;
+  --medium-gray: #2D2D2D;
   --light-gray: #404040;
-  --shadow: 0 10px 40px rgba(233, 30, 140, 0.3);
-  --shadow-hover: 0 15px 50px rgba(233, 30, 140, 0.5);
+  --shadow: 0 10px 40px rgba(212, 83, 126, 0.28);
+  --shadow-hover: 0 15px 50px rgba(212, 83, 126, 0.45);
 }
 
 /* Global button styles */

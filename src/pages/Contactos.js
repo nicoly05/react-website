@@ -10,7 +10,7 @@ function Contactos() {
       <div className="backgroundOverlay"></div>
 
       
-        <h1 style={{ color: '#e91e8c' }}>Contactos</h1>
+        <h1 style={{ color: '#D4537E' }}>Contactos</h1>
 
         {/* 3 LINHAS PEDIDAS */}
         <div className="contact-info">

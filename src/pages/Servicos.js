@@ -7,8 +7,6 @@ import IdentidadeVisual from '../assets/IdVisual.png';
 import GestaoRedes from '../assets/GestaoRedes.jpg'; 
 import CaptacaoImagens from '../assets/CaptacaoImagens.jpg'; 
 import Edicao from '../assets/Edicao.jpg'; 
-import TrafegoPago from '../assets/TrafegoPago.png'; 
-import MotionDesign from '../assets/MotionDesign.png'; 
 import TempoReal from '../assets/tempoReal.jpg'; 
 import Audiovisual from '../assets/Audiovisual.png'; 
 import DesignGrafico from '../assets/DesignGrafico.png'; 
@@ -100,42 +98,11 @@ function Servicos(){
       </Link>
     </div>
   </div>
-  {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-5" style={{ backgroundImage: `url(${TrafegoPago})` }}>
-    <div className="boxColuna boxTexto">
-      <h2>05. Tráfego Pago</h2>
-      <ul>
-        <li>Anúncios na Meta, Google, Tiktok Ads e outros</li>
-        <li>Campanhas com objetivos claros</li>
-        <li>Segmentação do público Ideal</li>
-        <li>Relatórios e otimizações</li>
-      </ul>
-      <Link to="/Projetos?categoria=5">
-      <button className='buttonBoxRosa'>Exemplos</button>
-      </Link>
-    </div>
-  </div>
-
-  {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto" id="servico-6" style={{ backgroundImage: `url(${MotionDesign})` }}>
-    <div className="boxColuna boxTexto">
-      <h2>06. Motion Design</h2>
-      <ul>
-       <li>Animação de logo e outros elementos</li>
-       <li>Vídeo explicativos</li>
-       <li>Grafismos dinâmicos</li>
-       <li>Tornamos seu conteúdo mais envolvente</li>
-      </ul>
-      <Link to="/Projetos?categoria=6">
-       <button className='buttonBoxPreto'>Exemplos</button>
-       </Link>
-    </div>
-  </div>
-
+  
    {/* Box 2 - Rosa, imagem à esquerda */}
   <div className="boxRosa" id="servico-7" style={{ backgroundImage: `url(${TempoReal})` }}>
     <div className="boxColuna boxTexto">
-      <h2>07. Cobertura em Tempo Real</h2>
+      <h2>05. Cobertura em Tempo Real</h2>
       <ul>
        <li>Stories durante o evento</li>
        <li>Reels e conteúdo dinâmico</li>
@@ -149,7 +116,7 @@ function Servicos(){
    {/* Box 3 - Preto, imagem à direita */}
   <div className="boxPreto" id="servico-8" style={{ backgroundImage: `url(${Audiovisual})` }}>
     <div className="boxColuna boxTexto">
-      <h2>08. Produção Audiovisual</h2>
+      <h2>06. Produção Audiovisual</h2>
       <ul>
        <li>Vídeos institucionais, promocionais, sociais e outros formatos</li>
        <li>Captamos momentos, produtos e espaços com olhar cinematográfico e atenção ao detalhe</li>
@@ -165,7 +132,7 @@ function Servicos(){
    {/* Box 2 - Rosa, imagem à esquerda */}
   <div className="boxRosa" id="servico-9" style={{ backgroundImage: `url(${DesignGrafico})` }}>
     <div className="boxColuna boxTexto">
-      <h2>09. Design Gráfico</h2>
+      <h2>07. Design Gráfico</h2>
       <ul>
        <li>Elaboração de grafismos</li>
        <li>Identidade visual</li>

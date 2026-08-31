@@ -1,6 +1,6 @@
 .boxTitulo {
     width: 100%;
-    background: #000000;
+    background: #1A1A1A;
     padding: 80px 40px;
     text-align: center;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,7 +31,7 @@
   align-items: flex-start;
   gap: 40px;
   padding: 80px 40px;
-  background: #000000;
+    background: #1A1A1A;
   flex-wrap: wrap;
 }
 
@@ -86,7 +86,7 @@
 .boxRosa {
     display: flex;
     flex-direction: row;
-    background: #000000;
+    background: #1A1A1A;
     color: var(--dark-text);
     padding: 80px 40px;
     width: 100%;

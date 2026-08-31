@@ -43,8 +43,6 @@ const servicesList = [
   { icon: "📱", title: "Gestão de Redes", description: "Conteúdo estratégico para redes sociais", categoria: 2 },
   { icon: "📷", title: "Captação de Imagens", description: "Fotografia e vídeo profissional", categoria: 3 },
   { icon: "🎬", title: "Edição de Fotos e Vídeos", description: "Tratamento de imagens e montagem", categoria: 4 },
-  { icon: "📱", title: "Tráfego Pago", description: "Campanhas, segmentação e otimização", categoria: 5 },
-  { icon: "🎨", title: "Motion Design", description: "Animação de logo e vídeo publicitário", categoria: 6 },
   { icon: "📹", title: "Cobertura em Tempo Real", description: "Stories, reels e lives", categoria: 7 },
   { icon: "🎙️", title: "Produção Audiovisual", description: "Vídeos institucionais e comerciais", categoria: 8 },
   { icon: "🎨", title: "Design Gráfico", description: "Artes, flyers e materiais visuais", categoria: 9 }
@@ -69,9 +67,14 @@ const handleNextServices = () => {
     {/* Hero Section */}
     <img src={HomeImage} alt="Hero" className="heroImage" />
     
-  
-  
-  
+   {/* Contact Section */}
+    <div className="sectionContainer contactSection">
+    <div className="sectionContent">
+      <h2>A sua marca merece ser vista como é</h2>
+      <p className="sectionDescription">Somos a +55 lab. Uma agência de comunicação que transforma a presença digital de negócios em Portugal em algo que atrai, convence e converte.</p>
+      <a href="https://wa.me/351999888777" className="sectionLink primary">Fale connosco</a>
+    </div>
+  </div>
 
   {/* Projects Preview Section */}
   <div className="sectionContainer projectsSection">
@@ -109,23 +112,7 @@ const handleNextServices = () => {
       <h2>Os Nossos Projetos</h2>
       <p className="sectionDescription">Soluções completas para elevar a sua marca</p>
       
-      {/* Instagram Carousel */}
-      <div className="instagram-carousel">
-        <div className="carousel-container">
-          <div 
-            className="carousel-track"
-            style={{ transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)` }}
-          >
-            {instagramPosts.map((post, index) => (
-              <div key={index} className="carousel-item">
-                <InstagramEmbed
-                  url={post.instagramUrl}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+ 
       
       <div className="servicesList">
         <Link to="/Projetos?categoria=10">
@@ -162,6 +149,49 @@ const handleNextServices = () => {
         </Link>
       </div>
       <Link to="/Projetos" className="sectionLink">Explorar Todos os Projetos →</Link>
+    </div>
+  </div>
+
+  {/* Google Reviews Section */}
+  <div className="sectionContainer reviewsSection">
+    <div className="sectionContent">
+      <h2>Avaliações</h2>
+      <p className="sectionDescription">O que os nossos clientes dizem sobre nós no Google.</p>
+
+      <div className="reviewsList">
+        {[
+          {
+            author: 'Nelson Pereira',
+            rating: 5,
+            excerpt: 'Tive a oportunidade de trabalhar com o +55 Lab no meu projeto Portugal Wrestlefest e cinco estrelas na verdade não é suficiente para avaliar o profissionalismo e a qualidade do trabalho fornecido. Pontuais, Incansáveis e prestaveis. Não há melhor.',
+            url: 'https://maps.app.goo.gl/hohZUud4t4Yt5FBY6'
+          },
+          {
+            author: 'Victory Way To Win',
+            rating: 5,
+            excerpt: 'O trabalho que fazem é de excelência. A sensibilidade que tem para se enquadrar em cada situação que lhes é proposta permite fazerem um trabalho diferenciado, de proximidade e sempre adequado à realidade que encontram. A dinâmica que tem criado na nossa empresa nas atividades que participarem tem sido fundamental para ter semanas de treino com os nossos atletas mais atrativas e criativas. Obrigado pelo vosso trabalho.',
+            url: 'https://maps.app.goo.gl/6tW6RdMdFXm51HEFA'
+          },
+          {
+            author: 'Janah Cardoso',
+            rating: 5,
+            excerpt: 'As meninas são excelentes profissionais. Começamos como parceria e desde então aprovei o trabalho delas e hoje sou uma cliente muito satisfeita e indico pra quem eu gosto',
+            url: 'https://maps.app.goo.gl/HTPhbuWWVqvCm6kw7'
+          }
+        ].map((review, i) => (
+          <a key={i} href={review.url} target="_blank" rel="noopener noreferrer" className="reviewCard">
+            <div className="reviewHeader">
+              <strong>{review.author}</strong>
+              <span className="reviewRating">{'★'.repeat(review.rating)}</span>
+            </div>
+            <p className="reviewExcerpt">{review.excerpt}</p>
+          </a>
+        ))}
+      </div>
+
+      <div className="reviewActions">
+        <a className="writeReviewBtn" href="https://maps.app.goo.gl/52FyPSByYU2snACS6" target="_blank" rel="noopener noreferrer">Deixar uma avaliação</a>
+      </div>
     </div>
   </div>
 

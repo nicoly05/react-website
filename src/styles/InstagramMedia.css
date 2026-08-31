@@ -93,12 +93,12 @@
   font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+  box-shadow: 0 4px 15px rgba(212, 83, 126, 0.3);
 }
 
 .view-instagram-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 157, 0.4);
+    box-shadow: 0 6px 20px rgba(212, 83, 126, 0.4);
 }
 
 @media only screen and (max-width: 480px) {
