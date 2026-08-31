@@ -19,7 +19,7 @@ body, html {
   padding: 0 60px;
   box-sizing: border-box;
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(212, 83, 126, 0.2);
+  box-shadow: 0 2px 20px rgba(232, 62, 115, 0.2);
   transition: all 0.3s ease;
 }
 
@@ -33,7 +33,7 @@ body, html {
   width: 50px;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(212, 83, 126, 0.3);
+  box-shadow: 0 4px 15px rgba(232, 62, 115, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -90,7 +90,7 @@ body, html {
   padding: 8px 12px;
   border-radius: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(212, 83, 126, 0.3);
+  box-shadow: 0 4px 15px rgba(232, 62, 115, 0.3);
 }
 
 .navbar .rightSide button:hover {

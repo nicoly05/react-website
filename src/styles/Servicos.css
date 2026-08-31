@@ -9,14 +9,10 @@
 }
 
 .boxTitulo h1 {
-    color: var(--dark-text);
+    color: var(--primary-pink);
     font-size: 3rem;
     margin: 0;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .boxTitulo span {
@@ -50,7 +46,7 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
+    background: var(--primary-pink);
     height: 50px;
     padding: 0 35px;
     max-width: 200px;
@@ -59,14 +55,14 @@
     font-size: 1rem;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(212, 83, 126, 0.3);
+    box-shadow: 0 8px 25px rgba(232, 62, 115, 0.3);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .buttonBoxRosa:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(212, 83, 126, 0.4);
+    box-shadow: 0 12px 35px rgba(232, 62, 115, 0.4);
 }
 
 .boxRosa .boxImagem img {
@@ -119,7 +115,7 @@
     font-size: 1rem;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(212, 83, 126, 0.3);
+    box-shadow: 0 8px 25px rgba(232, 62, 115, 0.3);
     text-transform: uppercase;
     letter-spacing: 1px;
 }

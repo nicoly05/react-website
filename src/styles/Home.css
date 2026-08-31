@@ -42,10 +42,7 @@
 .headerContainer h1 {
   font-size: 4rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-pink);
   text-align: center;
   margin: 0;
   letter-spacing: -1px;
@@ -83,14 +80,14 @@
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(212, 83, 126, 0.3);
+  box-shadow: 0 8px 25px rgba(232, 62, 115, 0.3);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .primaryButton:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(212, 83, 126, 0.4);
+  box-shadow: 0 12px 35px rgba(232, 62, 115, 0.4);
 }
 
 .secondaryButton {
@@ -112,7 +109,7 @@
   background: var(--primary-pink);
   color: #FFFFFF;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(212, 83, 126, 0.3);
+  box-shadow: 0 8px 25px rgba(232, 62, 115, 0.3);
 }
 
 .headerContainer a {
@@ -143,10 +140,7 @@
 .sectionContainer h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-pink);
   margin: 0;
   letter-spacing: -0.5px;
 }
@@ -262,7 +256,7 @@
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(212, 83, 126, 0.3);
+  box-shadow: 0 4px 15px rgba(232, 62, 115, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,7 +265,7 @@
 
 .carousel-arrow:hover:not(:disabled) {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(212, 83, 126, 0.4);
+  box-shadow: 0 6px 20px rgba(232, 62, 115, 0.4);
 }
 
 .carousel-arrow:disabled {

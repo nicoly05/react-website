@@ -19,8 +19,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 30% 50%, rgba(212, 83, 126, 0.08) 0%, transparent 50%),
-          radial-gradient(circle at 70% 50%, rgba(212, 83, 126, 0.06) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 50%, rgba(232, 62, 115, 0.08) 0%, transparent 50%),
+                  radial-gradient(circle at 70% 50%, rgba(232, 62, 115, 0.06) 0%, transparent 50%);
     z-index: 1;
 }
 
@@ -94,12 +94,12 @@
   background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
   border-radius: 50%;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(212, 83, 126, 0.3);
+  box-shadow: 0 8px 25px rgba(232, 62, 115, 0.3);
 }
 
 .iconLinks a:hover {
   transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 12px 35px rgba(212, 83, 126, 0.4);
+  box-shadow: 0 12px 35px rgba(232, 62, 115, 0.4);
 }
 
 .iconLinks img {
@@ -131,7 +131,7 @@
   padding: 20px 30px;
   background: linear-gradient(135deg, var(--dark-gray), var(--medium-gray));
   border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(212, 83, 126, 0.08);
+  box-shadow: 0 5px 20px rgba(232, 62, 115, 0.08);
   transition: all 0.3s ease;
   width: 100%;
   max-width: 500px;

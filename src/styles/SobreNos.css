@@ -8,14 +8,10 @@
 }
 
 .boxTitulo h1 {
-    color: var(--dark-text);
+    color: var(--primary-pink);
     font-size: 3rem;
     margin: 0 0 15px 0;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .boxTitulo h2 {

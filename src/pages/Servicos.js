@@ -3,13 +3,9 @@ import { Link, useSearchParams } from 'react-router-dom';
 
 
 import '../styles/Servicos.css'; 
-import IdentidadeVisual from '../assets/IdVisual.png'; 
-import GestaoRedes from '../assets/GestaoRedes.jpg'; 
-import CaptacaoImagens from '../assets/CaptacaoImagens.jpg'; 
-import Edicao from '../assets/Edicao.jpg'; 
-import TempoReal from '../assets/tempoReal.jpg'; 
-import Audiovisual from '../assets/Audiovisual.png'; 
-import DesignGrafico from '../assets/DesignGrafico.png'; 
+import backgroundPreto from '../assets/backgroundPreto.JPG';
+import backgroundBranco from '../assets/backgroundBranco.JPG';
+
 
 function Servicos(){
   const [searchParams] = useSearchParams();
@@ -34,7 +30,7 @@ function Servicos(){
   </div>
 
   {/* Box 2 - Rosa, imagem à esquerda */}
- <div className="boxRosa" id="servico-1" style={{ backgroundImage: `url(${IdentidadeVisual})` }}>
+ <div className="boxRosa" id="servico-1" style={{ backgroundImage: `url(${backgroundBranco})` }}>
     <div className="boxColuna boxTexto center">
       <h2>01. Identidade Visual</h2>
       <ul>
@@ -53,7 +49,7 @@ function Servicos(){
   </div>
 
   {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto" id="servico-2" style={{ backgroundImage: `url(${GestaoRedes})` }}>
+  <div className="boxPreto" id="servico-2" style={{ backgroundImage: `url(${backgroundPreto})` }}>
     <div className="boxColuna boxTexto">
       <h2>02. Gestão de Redes Sociais</h2>
       <ul>
@@ -68,7 +64,7 @@ function Servicos(){
     </div>
   </div>
   {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-3" style={{ backgroundImage: `url(${CaptacaoImagens})` }}>
+  <div className="boxRosa" id="servico-3" style={{ backgroundImage: `url(${backgroundBranco})` }}>
     <div className="boxColuna boxTexto">
       <h2>03. Captação de fotos e vídeos</h2>
       <ul>
@@ -84,7 +80,7 @@ function Servicos(){
   </div>
 
   {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto" id="servico-4" style={{ backgroundImage: `url(${Edicao})` }}>
+  <div className="boxPreto" id="servico-4" style={{ backgroundImage: `url(${backgroundPreto})` }}>
     <div className="boxColuna boxTexto">
       <h2>04. Edição de fotos e vídeos</h2>
       <ul>
@@ -100,7 +96,7 @@ function Servicos(){
   </div>
   
    {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-7" style={{ backgroundImage: `url(${TempoReal})` }}>
+  <div className="boxRosa" id="servico-7" style={{ backgroundImage: `url(${backgroundBranco})` }}>
     <div className="boxColuna boxTexto">
       <h2>05. Cobertura em Tempo Real</h2>
       <ul>
@@ -114,7 +110,7 @@ function Servicos(){
     </div>
   </div>
    {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto" id="servico-8" style={{ backgroundImage: `url(${Audiovisual})` }}>
+  <div className="boxPreto" id="servico-8" style={{ backgroundImage: `url(${backgroundPreto})` }}>
     <div className="boxColuna boxTexto">
       <h2>06. Produção Audiovisual</h2>
       <ul>
@@ -130,7 +126,7 @@ function Servicos(){
   </div>
 
    {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-9" style={{ backgroundImage: `url(${DesignGrafico})` }}>
+  <div className="boxRosa" id="servico-9" style={{ backgroundImage: `url(${backgroundBranco})` }}>
     <div className="boxColuna boxTexto">
       <h2>07. Design Gráfico</h2>
       <ul>
