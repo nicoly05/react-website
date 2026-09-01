@@ -4,12 +4,12 @@
     height: auto;
     min-height: 90vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     background: linear-gradient(135deg, #1A1A1A 0%, #1a1a1a 50%, #2d2d2d 100%);
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
+    padding: 40px 20px 20px 60px;
     overflow: hidden;
 }
 
@@ -23,6 +23,70 @@
                   radial-gradient(circle at 70% 50%, rgba(232, 62, 115, 0.06) 0%, transparent 50%);
     z-index: 1;
 }
+
+.contactHeader {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  margin-top: 80px;
+  margin-left: 0;
+}
+.contactHeader2 {
+  position: relative;
+  z-index: 1.5;
+  text-align: center;
+}
+.contactTitle {
+  color: #e83E73;
+  font-size: 1.8rem;
+  margin: 0 0 2px 0;
+  font-weight: 500;
+}
+
+.followLabel {
+  color: var(--light-text);
+  margin: 0 0 18px 0;
+}
+
+.contact-info {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 0 80px 0;
+  color:darkgrey;
+}
+
+  /* Carrossel de fundo */
+  .carouselContainer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .carouselContainer .carouselImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out, transform 8s linear;
+    transform: scale(1.04);
+    filter: brightness(0.35) saturate(0.9);
+  }
+
+  .carouselContainer .carouselImage.active {
+    opacity: 1;
+  }
 
 .headerContainer {
   position: relative;
@@ -40,6 +104,10 @@
   box-shadow: var(--shadow);
   text-align: center;
   animation: fadeInUp 1s ease;
+}
+
+.headerContainer h1 {
+    color: var(--primary-pink);
 }
 
 @keyframes fadeInUp {
@@ -109,62 +177,46 @@
   cursor: pointer;
 }
 
-/* ⭐ NOVO BLOCO — 3 LINHAS DE CONTACTO */
+/* ⭐ BLOCO — 3 LINHAS DE CONTACTO (alinhado à esquerda) */
 .contact-info {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 18px;
   margin-top: 30px;
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: flex-start;
   width: 100%;
+  max-width: 720px;
 }
 
 .contact-info p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  font-size: 1.4rem;
-  color: #ffffff;
-  margin: 0;
-  padding: 20px 30px;
-  background: linear-gradient(135deg, var(--dark-gray), var(--medium-gray));
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(232, 62, 115, 0.08);
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 500px;
-}
-
-.contact-info p:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(212, 83, 126, 0.18);
+  display: none;
 }
 
 .contact-button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
-  font-size: 1.4rem;
-  color: #ffffff;
+  gap: 12px;
+  font-size: 1.15rem;
+  color: #b8b5b5;
+  font-weight: 300;
   margin: 0;
-  padding: 20px 30px;
-  background: var(--dark-gray);
-  border: 2px solid var(--primary-pink);
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(212, 83, 126, 0.08);
-  transition: all 0.3s ease;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  transition: transform 0.18s ease;
   width: 100%;
-  max-width: 500px;
+  max-width: 420px;
   text-decoration: none;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .contact-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(212, 83, 126, 0.18);
-  background: var(--medium-gray);
+  transform: translateY(-2px);
 }
 
 .contact-info .icon {
