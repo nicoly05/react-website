@@ -15,7 +15,7 @@ const imagens = [
   { 
     id: 1, 
     src: WrestleFest, 
-    categoria: [1, 2, 3, 4, 7, 8, 9, 10], 
+    categoria: [1, 2, 3, 4, 5, 6, 7, 8], 
     titulo: "WrestleFest", 
     legenda: "Identidade Visual, Gestão de Redes, Captação e Edição de Fotos e Vídeos, Cobertura em tempo real, Produção Audiovisual, Design Gráfico e Eventos",
     descricao: "Desenvolvimento de identidade visual, gestão de redes sociais, captação e edição de fotos e vídeos, cobertura em tempo real, produção audiovisual, design gráfico e eventos para WrestleFest"
@@ -23,7 +23,7 @@ const imagens = [
   { 
     id: 2, 
     src: JanahEstetica, 
-    categoria: [3, 4, 11], 
+    categoria: [3, 4, 9], 
     titulo: "Janah", 
     legenda: "Captação e edição de Fotos e Vídeos",
     descricao: "Captação e edição de fotos e vídeos para RTP"
@@ -31,7 +31,7 @@ const imagens = [
   { 
     id: 3, 
     src: BenficaCascaisMalveira, 
-    categoria: [1, 2, 3, 4, 12], 
+    categoria: [1, 2, 3, 4, 10], 
     titulo: " Escola Benfica Cascais Malveira", 
     legenda: "Identidade Visual, Gestão de Redes, Captação e Edição de Fotos e Vídeos",
     descricao: "Identidade visual, gestão de redes sociais e captação e edição de fotos e vídeos para Benfica Cascais Malveira"
@@ -39,7 +39,7 @@ const imagens = [
   { 
     id: 4, 
     src: UAPovoense, 
-    categoria: [3, 4, 12],
+    categoria: [3, 4, 10],
     titulo: "UAPovoense", 
     legenda: "Captação e edição de Fotos e Vídeos",
     descricao: "Captação e edição de fotos e vídeos para UAPovoense"
@@ -47,7 +47,7 @@ const imagens = [
   { 
     id: 5, 
     src: Victory, 
-    categoria: [3, 4, 12], 
+    categoria: [3, 4, 10], 
     titulo: "Victory", 
     legenda: "Captação e edição de Fotos e Vídeos",
     descricao: "Captação e edição de fotos e vídeos para Victory"
@@ -55,7 +55,7 @@ const imagens = [
   { 
     id: 6, 
     src: Ruche, 
-    categoria: [3, 13], 
+    categoria: [3, 11], 
     titulo: "Ruche", 
     legenda: "Captação e edição de Fotos e Vídeos",
     descricao: "Captação e edição de fotos e vídeos para Ruche"
@@ -63,7 +63,7 @@ const imagens = [
   { 
     id: 7, 
     src: TEMPORARIO, 
-    categoria: [2, 13], 
+    categoria: [2, 11], 
     titulo: "Café Portugal", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Café Portugal"
@@ -71,7 +71,7 @@ const imagens = [
   { 
     id: 8, 
     src: TEMPORARIO, 
-    categoria: [2, 13], 
+    categoria: [2, 11], 
     titulo: "Café Gelo", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Café Gelo"
@@ -79,7 +79,7 @@ const imagens = [
   { 
     id: 9, 
     src: TEMPORARIO, 
-    categoria: [2, 13], 
+    categoria: [2, 11], 
     titulo: "Taverna do Pescador", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Taverna do Pescador"
@@ -87,7 +87,7 @@ const imagens = [
   { 
     id: 10, 
     src: TEMPORARIO, 
-    categoria: [2, 13], 
+    categoria: [2, 11], 
     titulo: "Villa di Roma", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Villa di Roma"
@@ -95,7 +95,7 @@ const imagens = [
   { 
     id: 11, 
     src: TEMPORARIO, 
-    categoria: [3, 13], 
+    categoria: [3, 11], 
     titulo: "Gelo Augusta", 
     legenda: "Captação de Fotos e Vídeos",
     descricao: "Captação e edição de fotos e vídeos para Gelo Augusta"
@@ -103,7 +103,7 @@ const imagens = [
   { 
     id: 12, 
     src: TEMPORARIO, 
-    categoria: [2, 13], 
+    categoria: [2, 11], 
     titulo: "Restaurante Ouro", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Restaurante Ouro"
@@ -111,7 +111,7 @@ const imagens = [
   { 
     id: 13, 
     src: TEMPORARIO, 
-    categoria: [2, 13], 
+    categoria: [2, 11], 
     titulo: "Brasa Lisboa", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Brasa Lisboa"
@@ -119,7 +119,7 @@ const imagens = [
   { 
     id: 14, 
     src: TEMPORARIO, 
-    categoria: [2, 12], 
+    categoria: [2, 10], 
     titulo: "Ginásio 100%", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Ginásio 100%"
@@ -127,7 +127,7 @@ const imagens = [
     { 
     id: 15, 
     src: TEMPORARIO, 
-    categoria: [2, 11], 
+    categoria: [2, 9], 
     titulo: "Ana Ferreira Hair", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Ana Ferreira Hair"
@@ -143,7 +143,7 @@ const imagens = [
     { 
     id: 17, 
     src: TEMPORARIO, 
-    categoria: [2, 3, 4, 10], 
+    categoria: [2, 3, 4, 8], 
     titulo: "Bailo", 
     legenda: "Gestão de Redes, Captação e edição de fotos e vídeos",
     descricao: "Gestão de redes sociais, captação e edição de fotos e vídeos para Bailo"
@@ -151,7 +151,7 @@ const imagens = [
     { 
     id: 18, 
     src: TEMPORARIO, 
-    categoria: [2, 12], 
+    categoria: [2, 10], 
     titulo: "Tribx", 
     legenda: "Gestão de Redes",
     descricao: "Gestão do Tik Tok para Tribx"
@@ -159,7 +159,7 @@ const imagens = [
     { 
     id: 19, 
     src: TEMPORARIO, 
-    categoria: [2, 14], 
+    categoria: [2, 12], 
     titulo: "Villa Dias Alojamento Local", 
     legenda: "Gestão de Redes",
     descricao: "Gestão de redes sociais para Villa Dias Alojamento Local"
@@ -175,7 +175,7 @@ const imagens = [
    { 
     id: 21, 
     src: TEMPORARIO, 
-    categoria: [2, 3, 4, 12], 
+    categoria: [2, 3, 4, 10], 
     titulo: "Top Player", 
     legenda: "Gestão de Redes, Captação e edição de fotos e vídeos",
     descricao: "Gestão de redes, captação e edição de fotos e vídeos para Top Player"
@@ -199,7 +199,7 @@ const imagens = [
   { 
     id: 24, 
     src: TEMPORARIO, 
-    categoria: [3, 4, 12], 
+    categoria: [3, 4, 10], 
     titulo: "DS", 
     legenda: "Captação e edição de fotos e vídeos",
     descricao: "Captação e edição de fotos e vídeos para DS"
@@ -207,7 +207,7 @@ const imagens = [
   { 
     id: 25, 
     src: TEMPORARIO, 
-    categoria: [3, 11], 
+    categoria: [3, 9], 
     titulo: "Lidiane", 
     legenda: "Captação e edição de fotos e vídeos",
     descricao: "Captação e edição de fotos e vídeos para Lidiane"
@@ -215,7 +215,7 @@ const imagens = [
   { 
     id: 26, 
     src: TEMPORARIO, 
-    categoria: [3, 7, 10], 
+    categoria: [3, 5, 8], 
     titulo: "Skechers - Nós Alive", 
     legenda: "Captação de fotos e vídeos em tempo real",
     descricao: "Captação de fotos e vídeos em tempo real para Skechers - Nós Alive"
@@ -223,7 +223,7 @@ const imagens = [
    { 
     id: 27, 
     src: TEMPORARIO, 
-    categoria: [3, 7, 10], 
+    categoria: [3, 5, 8], 
     titulo: "Novex - Rock in Rio", 
     legenda: "Captação de fotos e vídeos em tempo real",
     descricao: "Captação de fotos e vídeos em tempo real para Novex - Rock in Rio"
@@ -231,7 +231,7 @@ const imagens = [
    { 
     id: 28, 
     src: TEMPORARIO, 
-    categoria: [3, 7, 10], 
+    categoria: [3, 5, 8], 
     titulo: "Visit Azores - BTL", 
     legenda: "Captação de fotos e vídeos em tempo real",
     descricao: "Captação de fotos e vídeos em tempo real para Visit Azores - BTL"
@@ -239,7 +239,7 @@ const imagens = [
    { 
     id: 29, 
     src: TEMPORARIO, 
-    categoria: [3, 7, 10], 
+    categoria: [3, 5, 8], 
     titulo: "Congresso Advogados", 
     legenda: "Captação de fotos e vídeos em tempo real",
     descricao: "Captação de fotos e vídeos em tempo real para Congresso Advogados"
@@ -267,14 +267,14 @@ function Projetos() {
         <button className={filtro === 2 ? 'active' : ''} onClick={() => setFiltro(2)}>Gestão de Redes Sociais</button>
         <button className={filtro === 3 ? 'active' : ''} onClick={() => setFiltro(3)}>Captação de Fotos e Vídeos</button>
         <button className={filtro === 4 ? 'active' : ''} onClick={() => setFiltro(4)}>Edição de Fotos e Vídeos</button>
-        <button className={filtro === 7 ? 'active' : ''} onClick={() => setFiltro(7)}>Cobertura em tempo real</button>
-        <button className={filtro === 8 ? 'active' : ''} onClick={() => setFiltro(8)}>Produção Audiovisual</button>
-        <button className={filtro === 9 ? 'active' : ''} onClick={() => setFiltro(9)}>Design Gráfico</button>
-        <button className={filtro === 10 ? 'active' : ''} onClick={() => setFiltro(10)}>Eventos</button>
-        <button className={filtro === 11 ? 'active' : ''} onClick={() => setFiltro(11)}>Estética & Moda</button>
-        <button className={filtro === 12 ? 'active' : ''} onClick={() => setFiltro(12)}>Desporto</button>
-        <button className={filtro === 13 ? 'active' : ''} onClick={() => setFiltro(13)}>Gastronomia</button>
-        <button className={filtro === 14 ? 'active' : ''} onClick={() => setFiltro(14)}>Turismo</button>
+        <button className={filtro === 5 ? 'active' : ''} onClick={() => setFiltro(5)}>Cobertura em tempo real</button>
+        <button className={filtro === 6 ? 'active' : ''} onClick={() => setFiltro(6)}>Produção Audiovisual</button>
+        <button className={filtro === 7 ? 'active' : ''} onClick={() => setFiltro(7)}>Design Gráfico</button>
+        <button className={filtro === 8 ? 'active' : ''} onClick={() => setFiltro(8)}>Eventos</button>
+        <button className={filtro === 9 ? 'active' : ''} onClick={() => setFiltro(9)}>Estética & Moda</button>
+        <button className={filtro === 10 ? 'active' : ''} onClick={() => setFiltro(10)}>Desporto</button>
+        <button className={filtro === 11 ? 'active' : ''} onClick={() => setFiltro(11)}>Gastronomia</button>
+        <button className={filtro === 12 ? 'active' : ''} onClick={() => setFiltro(12)}>Turismo</button>
       </div>
 
       <div className="gradeImagens">
