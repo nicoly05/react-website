@@ -7,6 +7,26 @@ import BenficaCascaisMalveira from '../assets/BenficaCascaisMalveira.png';
 import Ruche from '../assets/Ruche.png';
 import WrestleFest from '../assets/WrestleFest.png';
 import UAPovoense from '../assets/UAPovoense.png';
+import CafePortugal from '../assets/CafePortugal.png';
+import GeloAugusta from '../assets/GeloAugusta.png';
+import GeloRossio from '../assets/GeloRossio.png';
+import Ouro from '../assets/Ouro.jpeg';
+import TavernaDoPescador from '../assets/TavernaDoPescador.png';
+import VillaDiRoma from '../assets/VillaDiRoma.png';
+import MariaLidiane from '../assets/MariaLidiane1.jpg';
+import TopPlayer from '../assets/TopPlayer.png';
+import Academia from '../assets/Academia100.png';
+import AnaFerreira from '../assets/AnaFerreira.jpg';
+import Bailo from '../assets/Bailo.png';
+import VilaDias from '../assets/VilaDias.png';
+import Brasa from '../assets/Brasa.jpeg';
+import DS from '../assets/DS.jpeg';
+import TribX from '../assets/TribX.jpeg';
+import Skechers from '../assets/Skechers.png';
+import SeminarioAdvogados from '../assets/SeminarioAdvogados.jpg';
+import JulitaImoveis from '../assets/JulitaImoveis.jpeg';
+import Novex from '../assets/Novex.jpeg';
+import EditePsicologa from '../assets/EditePsicologa.jpeg';
 import TEMPORARIO from '../assets/temporario.jpeg';
 import { useSearchParams } from 'react-router-dom';
 
@@ -62,7 +82,7 @@ const imagens = [
   },
   { 
     id: 7, 
-    src: TEMPORARIO, 
+    src: CafePortugal, 
     categoria: [2, 11], 
     titulo: "Café Portugal", 
     legenda: "Gestão de Redes",
@@ -70,7 +90,7 @@ const imagens = [
   },
   { 
     id: 8, 
-    src: TEMPORARIO, 
+    src: GeloRossio, 
     categoria: [2, 11], 
     titulo: "Café Gelo", 
     legenda: "Gestão de Redes",
@@ -78,7 +98,7 @@ const imagens = [
   },
   { 
     id: 9, 
-    src: TEMPORARIO, 
+    src: TavernaDoPescador, 
     categoria: [2, 11], 
     titulo: "Taverna do Pescador", 
     legenda: "Gestão de Redes",
@@ -86,7 +106,7 @@ const imagens = [
   },
   { 
     id: 10, 
-    src: TEMPORARIO, 
+    src: VillaDiRoma, 
     categoria: [2, 11], 
     titulo: "Villa di Roma", 
     legenda: "Gestão de Redes",
@@ -94,7 +114,7 @@ const imagens = [
   },
   { 
     id: 11, 
-    src: TEMPORARIO, 
+    src: GeloAugusta, 
     categoria: [3, 11], 
     titulo: "Gelo Augusta", 
     legenda: "Captação de Fotos e Vídeos",
@@ -102,7 +122,7 @@ const imagens = [
   },
   { 
     id: 12, 
-    src: TEMPORARIO, 
+    src: Ouro, 
     categoria: [2, 11], 
     titulo: "Restaurante Ouro", 
     legenda: "Gestão de Redes",
@@ -110,7 +130,7 @@ const imagens = [
   },
   { 
     id: 13, 
-    src: TEMPORARIO, 
+    src: Brasa, 
     categoria: [2, 11], 
     titulo: "Brasa Lisboa", 
     legenda: "Gestão de Redes",
@@ -118,15 +138,15 @@ const imagens = [
   },
   { 
     id: 14, 
-    src: TEMPORARIO, 
+    src: Academia, 
     categoria: [2, 10], 
-    titulo: "Ginásio 100%", 
+    titulo: "Academia 100%", 
     legenda: "Gestão de Redes",
-    descricao: "Gestão de redes sociais para Ginásio 100%"
+    descricao: "Gestão de redes sociais para Academia 100%"
   },
     { 
     id: 15, 
-    src: TEMPORARIO, 
+    src: AnaFerreira, 
     categoria: [2, 9], 
     titulo: "Ana Ferreira Hair", 
     legenda: "Gestão de Redes",
@@ -134,7 +154,7 @@ const imagens = [
   },
     { 
     id: 16, 
-    src: TEMPORARIO, 
+    src: JulitaImoveis, 
     categoria: [3, 4], 
     titulo: "Julita Imóveis", 
     legenda: "Captura e edição de fotos e vídeos",
@@ -142,7 +162,7 @@ const imagens = [
   },
     { 
     id: 17, 
-    src: TEMPORARIO, 
+    src: Bailo, 
     categoria: [2, 3, 4, 8], 
     titulo: "Bailo", 
     legenda: "Gestão de Redes, Captação e edição de fotos e vídeos",
@@ -150,23 +170,23 @@ const imagens = [
   },
     { 
     id: 18, 
-    src: TEMPORARIO, 
+    src: TribX, 
     categoria: [2, 10], 
-    titulo: "Tribx", 
+    titulo: "TribX", 
     legenda: "Gestão de Redes",
-    descricao: "Gestão do Tik Tok para Tribx"
+    descricao: "Gestão do Tik Tok para TribX"
   },
     { 
     id: 19, 
-    src: TEMPORARIO, 
+    src: VilaDias, 
     categoria: [2, 12], 
-    titulo: "Villa Dias Alojamento Local", 
+    titulo: "Vila Dias Alojamento Local", 
     legenda: "Gestão de Redes",
-    descricao: "Gestão de redes sociais para Villa Dias Alojamento Local"
+    descricao: "Gestão de redes sociais para Vila Dias Alojamento Local"
   },
    { 
     id: 20, 
-    src: TEMPORARIO, 
+    src: EditePsicologa, 
     categoria: [2], 
     titulo: "Edite Psicologa", 
     legenda: "Gestão de Redes",
@@ -174,7 +194,7 @@ const imagens = [
   },
    { 
     id: 21, 
-    src: TEMPORARIO, 
+    src: TopPlayer, 
     categoria: [2, 3, 4, 10], 
     titulo: "Top Player", 
     legenda: "Gestão de Redes, Captação e edição de fotos e vídeos",
@@ -198,7 +218,7 @@ const imagens = [
   },
   { 
     id: 24, 
-    src: TEMPORARIO, 
+    src: DS, 
     categoria: [3, 4, 10], 
     titulo: "DS", 
     legenda: "Captação e edição de fotos e vídeos",
@@ -206,15 +226,15 @@ const imagens = [
   },
   { 
     id: 25, 
-    src: TEMPORARIO, 
+    src: MariaLidiane, 
     categoria: [3, 9], 
-    titulo: "Lidiane", 
+    titulo: " Maria Lidiane Beauty", 
     legenda: "Captação e edição de fotos e vídeos",
     descricao: "Captação e edição de fotos e vídeos para Lidiane"
   },
   { 
     id: 26, 
-    src: TEMPORARIO, 
+    src: Skechers, 
     categoria: [3, 5, 8], 
     titulo: "Skechers - Nós Alive", 
     legenda: "Captação de fotos e vídeos em tempo real",
@@ -222,7 +242,7 @@ const imagens = [
   },
    { 
     id: 27, 
-    src: TEMPORARIO, 
+    src: Novex, 
     categoria: [3, 5, 8], 
     titulo: "Novex - Rock in Rio", 
     legenda: "Captação de fotos e vídeos em tempo real",
@@ -238,11 +258,11 @@ const imagens = [
   },
    { 
     id: 29, 
-    src: TEMPORARIO, 
+    src: SeminarioAdvogados, 
     categoria: [3, 5, 8], 
-    titulo: "Congresso Advogados", 
+    titulo: "Seminário Advogados", 
     legenda: "Captação de fotos e vídeos em tempo real",
-    descricao: "Captação de fotos e vídeos em tempo real para Congresso Advogados"
+    descricao: "Captação de fotos e vídeos em tempo real para Seminário Advogados"
   },
 ];
 

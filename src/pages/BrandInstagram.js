@@ -8,8 +8,8 @@ const imagens = [
   { 
     id: 1, 
     titulo: "WrestleFest", 
-    legenda: "Identidade Visual",
-    descricao: "Desenvolvimento de identidade visual para WrestleFest",
+    legenda: "Identidade Visual, Gestão de Redes, Captação e Edição de Fotos e Vídeos, Cobertura em tempo real, Produção Audiovisual, Design Gráfico e Eventos",
+    descricao: "Desenvolvimento de identidade visual, gestão de redes sociais, captação e edição de fotos e vídeos, cobertura em tempo real, produção audiovisual, design gráfico e eventos para WrestleFest",
     instagramPosts: [
       {
         instagramUrl: "https://www.instagram.com/reel/DO3_NfjCLPR/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
@@ -88,7 +88,7 @@ const imagens = [
   },
   { 
     id: 3, 
-    titulo: "Benfica Cascais Malveira", 
+    titulo: "Escola Benfica Cascais Malveira", 
     legenda: "Identidade Visual",
     descricao: "Identidade visual e gestão de redes sociais para Benfica Cascais Malveira",
     instagramPosts: [
