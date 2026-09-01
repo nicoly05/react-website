@@ -96,7 +96,7 @@ function Servicos(){
   </div>
   
    {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-7" style={{ backgroundImage: `url(${backgroundBranco})` }}>
+  <div className="boxRosa" id="servico-5" style={{ backgroundImage: `url(${backgroundBranco})` }}>
     <div className="boxColuna boxTexto">
       <h2>05. Cobertura em Tempo Real</h2>
       <ul>
@@ -104,13 +104,13 @@ function Servicos(){
        <li>Reels e conteúdo dinâmico</li>
        <li>Posts atualizados no feed</li>
       </ul>
-      <Link to="/Projetos?categoria=7">
+      <Link to="/Projetos?categoria=5">
       <button className='buttonBoxRosa'>Exemplos</button>
       </Link>
     </div>
   </div>
    {/* Box 3 - Preto, imagem à direita */}
-  <div className="boxPreto" id="servico-8" style={{ backgroundImage: `url(${backgroundPreto})` }}>
+  <div className="boxPreto" id="servico-6" style={{ backgroundImage: `url(${backgroundPreto})` }}>
     <div className="boxColuna boxTexto">
       <h2>06. Produção Audiovisual</h2>
       <ul>
@@ -119,14 +119,14 @@ function Servicos(){
        <li>Transformamos as imagens em peças de comunicação cativantes</li>
        <li>Cuidamos do ritmo, som, cor e narrativa para dar vida a cada projeto</li>
       </ul>
-      <Link to="/Projetos?categoria=8">
+      <Link to="/Projetos?categoria=6">
        <button className='buttonBoxPreto'>Exemplos</button>
        </Link>
     </div>
   </div>
 
    {/* Box 2 - Rosa, imagem à esquerda */}
-  <div className="boxRosa" id="servico-9" style={{ backgroundImage: `url(${backgroundBranco})` }}>
+  <div className="boxRosa" id="servico-7" style={{ backgroundImage: `url(${backgroundBranco})` }}>
     <div className="boxColuna boxTexto">
       <h2>07. Design Gráfico</h2>
       <ul>
@@ -134,7 +134,7 @@ function Servicos(){
        <li>Identidade visual</li>
        <li>Propostas criativas que fortalecem a sua marca</li>
       </ul>
-      <Link to="/Projetos?categoria=9">
+      <Link to="/Projetos?categoria=7">
       <button className='buttonBoxRosa'>Exemplos</button>
       </Link>
     </div>

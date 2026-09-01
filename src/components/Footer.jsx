@@ -25,11 +25,11 @@ function Footer() {
         <div className="footer-section">
           <h4>Serviços</h4>
           <ul>
-            <li>Identidade Visual</li>
-            <li>Gestão de Redes</li>
-            <li>Captação de Imagens</li>
-            <li>Edição de Fotos e Vídeos</li>
-            <li>Tráfego Pago</li>
+            <li><Link to="/Servicos?categoria=1">Identidade Visual</Link></li>
+            <li><Link to="/Servicos?categoria=2">Gestão de Redes</Link></li>
+            <li><Link to="/Servicos?categoria=3">Captação e Edição de Fotos e Vídeos</Link></li>
+            <li><Link to="/Servicos?categoria=6">Produção Audiovisual</Link></li>
+            <li><Link to="/Servicos?categoria=7">Design Gráfico</Link></li>
           </ul>
         </div>
         

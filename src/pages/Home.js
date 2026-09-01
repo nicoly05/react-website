@@ -43,9 +43,9 @@ const servicesList = [
   { title: "Gestão de Redes", description: "Conteúdo estratégico para redes sociais", categoria: 2 },
   { title: "Captação de Imagens", description: "Fotografia e vídeo profissional", categoria: 3 },
   { title: "Edição de Fotos e Vídeos", description: "Tratamento de imagens e montagem", categoria: 4 },
-  { title: "Cobertura em Tempo Real", description: "Stories, reels e lives", categoria: 7 },
-  { title: "Produção Audiovisual", description: "Vídeos institucionais e comerciais", categoria: 8 },
-  { title: "Design Gráfico", description: "Artes, flyers e materiais visuais", categoria: 9 }
+  { title: "Cobertura em Tempo Real", description: "Stories, reels e lives", categoria: 5 },
+  { title: "Produção Audiovisual", description: "Vídeos institucionais e comerciais", categoria: 6 },
+  { title: "Design Gráfico", description: "Artes, flyers e materiais visuais", categoria: 7 }
 ];
 
 const [servicesIndex, setServicesIndex] = useState(0);
@@ -65,7 +65,7 @@ const handleNextServices = () => {
   <div className="home">
 
     {/* Hero Section */}
-    <img src={HomeImage} alt="Hero" className="heroImage" />
+    {/* <img src={HomeImage} alt="Hero" className="heroImage" /> */}
     
    {/* Contact Section */}
     <div className="sectionContainer contactSection">
@@ -102,7 +102,7 @@ const handleNextServices = () => {
       <button className="carousel-arrow right" onClick={handleNextServices}>→</button>
     </div>
       
-      <Link to="/Servicos" className="sectionLink">Ver Todos os Serviços →</Link>
+      <Link to="/Servicos?categoria=1" className="sectionLink">Ver Todos os Serviços →</Link>
     </div>
   </div>
 
