@@ -154,9 +154,9 @@ function BrandInstagram() {
 
   if (!brand) {
     return (
-      <div className="brand-instagram-container">
-        <h1>Marca não encontrada</h1>
-        <Link to="/Projetos">Voltar para Projetos</Link>
+      <div className="brand-instagram-container-not-found">
+        <Link className="back-link" to="/Projetos">← Voltar para Projetos</Link>
+        <h1>Desculpe! Estamos processando o conteúdo dessa marca no momento...</h1>
       </div>
     );
   }
