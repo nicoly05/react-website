@@ -27,6 +27,9 @@ import SeminarioAdvogados from '../assets/SeminarioAdvogados.jpg';
 import JulitaImoveis from '../assets/JulitaImoveis.jpeg';
 import Novex from '../assets/Novex.jpeg';
 import EditePsicologa from '../assets/EditePsicologa.jpeg';
+import AcademiaBarril from '../assets/AcademiaBarril.png'; 
+import VisitAzores from '../assets/VisitAzores.png';
+import GabrielaRosa from '../assets/GabrielaRosa.jpeg';
 import TEMPORARIO from '../assets/temporario.jpeg';
 import { useSearchParams } from 'react-router-dom';
 
@@ -202,7 +205,7 @@ const imagens = [
   },
    { 
     id: 22, 
-    src: TEMPORARIO, 
+    src: AcademiaBarril, 
     categoria: [2], 
     titulo: "Academia Barril", 
     legenda: "Gestão de Redes",
@@ -210,7 +213,7 @@ const imagens = [
   },
    { 
     id: 23, 
-    src: TEMPORARIO, 
+    src: GabrielaRosa, 
     categoria: [3, 4], 
     titulo: "Gabriela Rosa", 
     legenda: "Captura e edição de fotos e vídeos",
@@ -250,7 +253,7 @@ const imagens = [
   },
    { 
     id: 28, 
-    src: TEMPORARIO, 
+    src: VisitAzores, 
     categoria: [3, 5, 8], 
     titulo: "Visit Azores - BTL", 
     legenda: "Captação de fotos e vídeos em tempo real",
