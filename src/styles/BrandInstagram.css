@@ -24,6 +24,17 @@
   transition: all 0.3s ease;
 }
 
+.back-link2 {
+   color: var(--primary-pink);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 15px 30px;
+  border: 2px solid var(--primary-pink);
+  border-radius: 50px;
+}
+
 .back-link:hover {
   color: var(--primary-pink);
   transform: translateX(-5px);

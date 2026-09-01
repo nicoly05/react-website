@@ -163,7 +163,7 @@ function BrandInstagram() {
 
   return (
     <div className="brand-instagram-container">
-      <Link to="/Projetos" className="back-link">← Voltar para Projetos</Link>
+      <Link to="/Projetos" className="back-link2">← Voltar</Link>
        <div className="brand-header">
        
         <h1 className="brand-title">{brand.titulo}</h1>
