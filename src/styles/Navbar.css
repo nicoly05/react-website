@@ -79,6 +79,16 @@ body, html {
   width: 100%;
 }
 
+/* Link ativo (página atual) */
+.navbar a.active {
+  color: var(--primary-pink);
+  font-weight: 700;
+}
+
+.navbar a.active::after {
+  width: 100%;
+}
+
 /* Botão hamburguer */
 .navbar .rightSide button {
   background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Logo from "../assets/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ReorderIcon from "@material-ui/icons/Reorder";
 import "../styles/Navbar.css";
 
@@ -21,19 +21,19 @@ function Navbar() {
           <img src={Logo} alt="logo"/>
         </Link>
         <div className="hiddenLinks">
-        <Link to="/"  onClick={closeMenu}>Home</Link>
-      <Link to="/Servicos"  onClick={closeMenu}>Serviços</Link>
-      <Link to="/Projetos"  onClick={closeMenu}>Projetos</Link>
-      <Link to="/SobreNos"  onClick={closeMenu}>Sobre nós</Link>
-      <Link to="/Contactos"  onClick={closeMenu}>Contactos</Link>
+        <NavLink to="/"  onClick={closeMenu} className={({isActive})=> isActive? 'active' : ''}>Home</NavLink>
+      <NavLink to="/Servicos"  onClick={closeMenu} className={({isActive})=> isActive? 'active' : ''}>Serviços</NavLink>
+      <NavLink to="/Projetos"  onClick={closeMenu} className={({isActive})=> isActive? 'active' : ''}>Projetos</NavLink>
+      <NavLink to="/SobreNos"  onClick={closeMenu} className={({isActive})=> isActive? 'active' : ''}>Sobre nós</NavLink>
+      <NavLink to="/Contactos"  onClick={closeMenu} className={({isActive})=> isActive? 'active' : ''}>Contactos</NavLink>
         </div>
       </div>
       <div className="rightSide">
-      <Link to="/">Home</Link>
-     <Link to="/Servicos">Serviços</Link>
-      <Link to="/Projetos">Projetos</Link>
-      <Link to="/SobreNos">Sobre nós</Link>
-      <Link to="/Contactos">Contactos</Link>
+      <NavLink to="/" className={({isActive})=> isActive? 'active' : ''}>Home</NavLink>
+         <NavLink to="/Servicos" className={({isActive})=> isActive? 'active' : ''}>Serviços</NavLink>
+      <NavLink to="/Projetos" className={({isActive})=> isActive? 'active' : ''}>Projetos</NavLink>
+      <NavLink to="/SobreNos" className={({isActive})=> isActive? 'active' : ''}>Sobre nós</NavLink>
+      <NavLink to="/Contactos" className={({isActive})=> isActive? 'active' : ''}>Contactos</NavLink>
       <button onClick={toggleNavbar}>
         <ReorderIcon/>
       </button>

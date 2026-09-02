@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "../styles/Home.css"
 import HomeImage from '../assets/HomeImage.png';
 import InstagramEmbed from '../components/InstagramEmbed';
+import Victory from '../assets/Victory.png';
+import JanahEstetica from '../assets/JanahEstetica.png';
+import BenficaCascaisMalveira from '../assets/BenficaCascaisMalveira.png';
+import Ruche from '../assets/Ruche.png';
 
 
 function Home() {
@@ -114,39 +118,22 @@ const handleNextServices = () => {
       
  
       
-      <div className="servicesList">
-        <Link to="/Projetos?categoria=10">
-        <div className="serviceItem">
-          <span className="serviceNumber">01</span>
-          <div className="serviceInfo">
-            <h3>Eventos</h3>
-          </div>
+      <div className="projectsGridWrapper">
+        <div className="projectGrid">
+          {[
+            { id: 10, src: Victory, title: 'Eventos', category: 'Eventos' },
+            { id: 11, src: JanahEstetica, title: 'Estética e Moda', category: 'Estética & Moda' },
+            { id: 12, src: BenficaCascaisMalveira, title: 'Desporto', category: 'Desporto' },
+            { id: 13, src: Ruche, title: 'Gastronomia', category: 'Gastronomia' }
+          ].map((proj, idx) => (
+            <Link key={proj.id} to={`/Projetos?categoria=${proj.id}`} className="projectCard">
+              <img src={proj.src} alt={proj.title} />
+              <div className="projectOverlay">
+                <h3 className="projectTitle">{proj.title}</h3>
+              </div>
+            </Link>
+          ))}
         </div>
-        </Link>
-        <Link to="/Projetos?categoria=11">
-        <div className="serviceItem">
-          <span className="serviceNumber">02</span>
-          <div className="serviceInfo">
-            <h3>Estética e Moda</h3>
-          </div>
-        </div>
-        </Link>
-        <Link to="/Projetos?categoria=12">
-        <div className="serviceItem">
-          <span className="serviceNumber">03</span>
-          <div className="serviceInfo">
-            <h3>Desporto</h3>
-          </div>
-        </div>
-        </Link>
-        <Link to="/Projetos?categoria=13">
-        <div className="serviceItem">
-          <span className="serviceNumber">04</span>
-          <div className="serviceInfo">
-            <h3>Gastronomia</h3>
-          </div>
-        </div>
-        </Link>
       </div>
       <Link to="/Projetos" className="sectionLink">Explorar Todos os Projetos →</Link>
     </div>
