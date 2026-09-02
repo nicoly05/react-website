@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
 import "../styles/Home.css"
 import HomeImage from '../assets/HomeImage.png';
@@ -53,7 +53,11 @@ const servicesList = [
 ];
 
 const [servicesIndex, setServicesIndex] = useState(0);
-const servicesPerPage = 3;
+const [servicesPerPage, setServicesPerPage] = useState(3);
+const carouselContainerRef = useRef(null);
+const [containerWidth, setContainerWidth] = useState(0);
+
+// recompute max index depending on how many items are visible
 const maxServicesIndex = Math.max(0, servicesList.length - servicesPerPage);
 
 const handlePrevServices = () => {
@@ -64,6 +68,29 @@ const handleNextServices = () => {
   setServicesIndex(prev => prev >= maxServicesIndex ? 0 : prev + 1);
 };
 
+// Update visible items per page on resize (1 on small screens, 3 otherwise)
+useEffect(() => {
+  const update = () => {
+    const w = window.innerWidth;
+    setServicesPerPage(w < 1024 ? 1 : 3);
+    if (carouselContainerRef.current) {
+      setContainerWidth(carouselContainerRef.current.clientWidth);
+    }
+  };
+  update();
+  window.addEventListener('resize', update);
+  return () => window.removeEventListener('resize', update);
+}, []);
+
+// Clamp current index if servicesPerPage changes
+useEffect(() => {
+  setServicesIndex(prev => Math.min(prev, Math.max(0, servicesList.length - servicesPerPage)));
+}, [servicesPerPage, servicesList.length]);
+
+
+  // compute pixel shift per card
+  const cardWidth = containerWidth && servicesPerPage ? containerWidth / servicesPerPage : 0;
+  const shift = servicesIndex * cardWidth;
 
   return (
   <div className="home">
@@ -88,13 +115,18 @@ const handleNextServices = () => {
          <div className="services-carousel">
       <button className="carousel-arrow left" onClick={handlePrevServices}>←</button>
 
-      <div className="services-carousel-container">
+      <div className="services-carousel-container" ref={carouselContainerRef}>
         <div
   className="services-carousel-track"
-  style={{ transform: `translateX(-${servicesIndex * (100 / 3)}%)` }}
+  style={{ transform: `translateX(-${shift}px)` }}
 >
           {servicesList.map((service, index) => (
-            <Link key={index} to={`/Servicos?categoria=${service.categoria}`} className={`previewCard carousel-item ${index === servicesIndex + 1 ? 'middle-card' : ''}`}>
+            <Link
+              key={index}
+              to={`/Servicos?categoria=${service.categoria}`}
+              className={`previewCard carousel-item ${index === servicesIndex + 1 ? 'middle-card' : ''}`}
+              style={{ flex: `0 0 ${100 / servicesPerPage}%`, minWidth: `${100 / servicesPerPage}%` }}
+            >
               <div className="cardIcon">{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>

@@ -242,16 +242,18 @@
 }
 
 @media (max-width: 600px) {
-  .projectGrid { grid-template-columns: 1fr; }
-  .projectCard { height: 240px; }
-}
+  .gradeImagens {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-.previewCards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  .carousel-item {
+    flex: 0 0 100%;
+    min-width: 100%;
+  
   width: 100%;
   margin: 20px 0;
   gap: 1rem;
+  }
 }
 
 .previewCard {
@@ -635,7 +637,6 @@
 }
 
 .carousel-item {
-  flex: 0 0 calc(100% / 3);
   box-sizing: border-box;
   padding: 20px 20px;
 }
@@ -679,7 +680,8 @@
 /* Responsivo */
 @media (max-width: 768px) {
   .carousel-item {
-    min-width: calc(100% / 1.2);
+    flex: 0 0 100%;
+    min-width: 100%;
   }
 }
 
